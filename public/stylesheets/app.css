@@ -1,0 +1,184 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+.none {
+  display: none;
+}
+body {
+  background-color: #eee;
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  background-color: #2c3e50;
+  line-height: 50px;
+  padding-left: 2em;
+  padding-right: 2em;
+  box-shadow: 0 2px 3px #4a6989;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.header .header__Web {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.header .header__Web .title {
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+.subHeader {
+  background-color: #000;
+  background-image: url("../images/bg.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  position: relative;
+}
+.subHeader .videoWeb {
+  width: 100%;
+  opacity: 0.3;
+}
+.subHeader .subHeader--Details {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+}
+.subHeader .subHeader--Details .subHeader--Details--Header {
+  width: 30%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f1c40f;
+  padding-bottom: 1em;
+}
+.subHeader .subHeader--Details .subHeader--Details--Header .title {
+  color: #fff;
+  text-shadow: 0 2px 5px #000;
+  font-size: 2em;
+}
+.subHeader__Description {
+  background-color: #f1c40f;
+  line-height: 25px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+.subHeader__Description .title {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+  font-size: 1.5em;
+}
+.header__Cours {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.header__Cours .header__Cours--Articl .Articl--Figure img {
+  width: 100%;
+}
+.header__Cours .header__Cours--Aside .Aside--Header {
+  text-align: center;
+  margin: 0 0 2em 0;
+}
+.header__Cours .header__Cours--Aside .Aside--Header .title {
+  color: #7f8a94;
+}
+.header__Cours .header__Cours--Aside .Aside--Description {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.header__Cours .header__Cours--Aside .Aside--Header--Details {
+  margin: 0 0 2em 0;
+}
+.header__Cours .header__Cours--Aside .Aside--Header--Details .title {
+  font-size: 1.2em;
+  color: #7f8a94;
+}
+.header__Cours .header__Cours--Aside .Aside__Ul {
+  padding: 0;
+  margin: 0.5em 0 0 0;
+}
+.header__Cours .header__Cours--Aside .Aside__Ul .list {
+  list-style-type: none;
+}
+.header__Cours .header__Cours--Aside .Aside__Ul .list i {
+  margin: 0 0.5em 0 0;
+  color: #03a9f4;
+}
+.description__Cours {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #fff;
+}
+.header_content {
+  padding-top: 1em;
+  padding-left: 0;
+  padding-right: 0;
+}
+.ulShow {
+  padding: 0;
+  margin-top: 1em;
+  background-color: #fff;
+  border: 1px solid #e8ebed;
+}
+.ulShow .titleLabel {
+  background-color: #f7f9fa;
+  display: block;
+  padding: 1em;
+  color: #42474d;
+}
+.ulShow .list--Show {
+  list-style-type: none;
+  padding: 0 1em;
+  margin: 0 0 0.8em 0;
+  color: #999;
+  border-bottom: 1px solid #e8ebed;
+}
+.ulShow .list--Show i {
+  margin: 0 0.5em 0 0;
+  color: #999;
+  background-color: #33c17a;
+  border-radius: 50%;
+  color: #fff;
+}
+.ulShow .learningSum {
+  text-align: center;
+  border: 1px solid #33c17a;
+  padding: 0.8em 0;
+  width: 20%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.ulShow .learningSum:hover {
+  background-color: #33c17a;
+  color: #fff;
+}
+.aside__Author .aside__Author--Contain {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #33c17a;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.aside__Author .aside__Author--Header .title {
+  margin: 0 0 0.5em 0;
+}
+.aside__Author .aside__Author--Figure img {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #33c17a;
+}
