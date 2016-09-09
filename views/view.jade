@@ -8,17 +8,17 @@ html(lang='en')
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
 
-    link(rel="stylesheet", href="stylesheets/bootstrap.min.css")
-    link(rel="stylesheet", href="stylesheets/bootstrap-theme.css")
-    link(rel="stylesheet", href="stylesheets/app.css")
+    link(rel="stylesheet", href="../stylesheets/bootstrap.min.css")
+    link(rel="stylesheet", href="../stylesheets/bootstrap-theme.css")
+    link(rel="stylesheet", href="../stylesheets/app.css")
 
     //Video
     link(rel="stylesheet", href="https://vjs.zencdn.net/5.9.2/video-js.css")
 
 
     script(src="http://code.jquery.com/jquery-1.9.1.js")
-    script(src="javascripts/bootstrap.min.js")
-    script(src="javascripts/code-developer.js")
+    script(src="../javascripts/bootstrap.min.js")
+    script(src="../javascripts/code-developer.js")
     script(src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js")
     //script(src="javascripts/code-developer2.js")
     //script(src="javascripts/code-developer3.js")
@@ -34,14 +34,14 @@ html(lang='en')
     section.videoPrimary.col-md-12
      header.videoPrimary--Header
       h2.title
-       | 1. Introducción
+       | #{titleVideo}
      video(id="my-video" , controls class="video-js", data-setup="{}")
-      source(src="https://lib.tutellus.com/libraries/22/96/37/lib/1461713178275_1-480.mp4", type="video/mp4")
+      source(src="#{video}", type="video/mp4")
     div.videoSecondary.col-md-12
      div.video--Iz.col-md-6
       span.showDetails
-       | Introduccion
+       | #{titleSubmenu}
      div.video--De.col-md-6
       a.linkNext(href="#")
-       | Instalando Nuestro IDE
+       | #{titleSubmenuNext}
   script(src="https://vjs.zencdn.net/5.9.2/video.js")
