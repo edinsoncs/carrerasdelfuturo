@@ -11,7 +11,7 @@ html(lang='en')
     link(rel="stylesheet", href="stylesheets/app.css")
 
     //Video
-    link(rel="stylesheets", href="https://vjs.zencdn.net/5.9.2/video-js.css")
+    link(rel="stylesheet", href="https://vjs.zencdn.net/5.9.2/video-js.css")
 
 
     script(src="http://code.jquery.com/jquery-1.9.1.js")
@@ -27,13 +27,13 @@ html(lang='en')
      h1.title
       | Carrerasdelfuturo
 
-  main.container
+  main.container.viewVideo
    div.row
     section.videoPrimary.col-md-12
      header.videoPrimary--Header
       h2.title
-       | Introducción
-     video(id="my-video" , controls class="video-js uCenterVideo", data-setup="{}")
+       | 1. Introducción
+     video(id="my-video" , controls class="video-js", data-setup="{}")
       source(src="https://lib.tutellus.com/libraries/22/96/37/lib/1461713178275_1-480.mp4", type="video/mp4")
     div.videoSecondary.col-md-12
   script(src="https://vjs.zencdn.net/5.9.2/video.js")
