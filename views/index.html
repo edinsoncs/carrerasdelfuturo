@@ -18,14 +18,14 @@
 <body>
   <header class="header container-fluid">
     <div class="row">
-      <section class="header__Web col-md-4">
+      <section class="header__Web col-md-10">
         <h1 class="title">Carrerasdelfuturo</h1>
       </section>
-      <!--nav.header__Nav.col-md-8
-      ul.header__Nav--Ul
-       li.list
-        a.link
-      -->
+      <nav class="header__Nav col-md-2">
+        <ul class="header__Nav--Ul">
+          <li class="list"><a class="link payment">Comprar</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <section class="subHeader container-fluid">
@@ -53,7 +53,12 @@
   <section class="container header__Cours">
     <div class="row">
       <article class="col-md-6 header__Cours--Articl">
-        <figure class="Articl--Figure"><img src="images/cours1.jpg" alt=""></figure>
+        <figure class="Articl--Figure"><img src="images/cours1.jpg" alt="">
+          <video id="showvideo">
+            <source src="https://lib.tutellus.com/libraries/22/96/37/lib/1456679805036_3-480.mp4" type="video/mp4">
+          </video>
+          <div class="container--Icon"><i class="glyphicon glyphicon-play jsVideoPlay"></i></div>
+        </figure>
       </article>
       <aside class="col-md-6 header__Cours--Aside">
         <div class="Aside__Contain">
@@ -233,6 +238,13 @@
             <div class="learningSum"><span class="jsClick learningSum--Css">Leer Más</span></div>
           </ul>
           <aside class="aside__Author col-md-4 col-md-offset-2">
+            <div class="aside__Price--Contain">
+              <header class="aside__Price--Header">
+                <h4 class="title">Precio:</h4>
+              </header>
+              <div class="aside__Price--Show"><strong class="price">$19.99</strong></div>
+              <div class="aside__Price--Buy"><a class="linkBuy">Comprar</a></div>
+            </div>
             <div class="aside__Author--Contain">
               <header class="aside__Author--Header">
                 <h4 class="title">Profesor</h4>

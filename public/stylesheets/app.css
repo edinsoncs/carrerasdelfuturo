@@ -36,6 +36,22 @@ body {
   text-transform: uppercase;
   font-size: 2em;
 }
+.header .header__Nav .header__Nav--Ul {
+  margin-bottom: 0;
+}
+.header .header__Nav .header__Nav--Ul .list {
+  list-style-type: none;
+}
+.header .header__Nav .header__Nav--Ul .list .link.payment {
+  margin: 5em 0 0 0;
+  background-color: #e10700;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
 .subHeader {
   background-color: #000;
   background-image: url("../images/bg.jpg");
@@ -87,8 +103,34 @@ body {
   padding-top: 2em;
   padding-bottom: 2em;
 }
+.header__Cours .header__Cours--Articl {
+  padding-left: 0;
+  padding-right: 0;
+}
+.header__Cours .header__Cours--Articl video {
+  display: none;
+  width: 100%;
+}
 .header__Cours .header__Cours--Articl .Articl--Figure img {
   width: 100%;
+  display: block;
+  position: relative;
+}
+.header__Cours .header__Cours--Articl .Articl--Figure .container--Icon {
+  position: absolute;
+  background-color: rgba(0,0,0,0.43);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+.header__Cours .header__Cours--Articl .Articl--Figure .container--Icon i {
+  color: #fff;
+  font-size: 4em;
+  margin: 2.5em 0;
+  text-shadow: 0 2px 2px #000;
+  cursor: pointer;
 }
 .header__Cours .header__Cours--Aside .Aside--Header {
   text-align: center;
@@ -166,6 +208,31 @@ body {
 .ulShow .learningSum:hover {
   background-color: #33c17a;
   color: #fff;
+}
+.aside__Author .aside__Price--Contain {
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+.aside__Author .aside__Price--Contain .aside__Price--Header .price,
+.aside__Author .aside__Price--Contain .aside__Price--Show .price {
+  font-size: 2.2em;
+  color: #f44336;
+}
+.aside__Author .aside__Price--Contain .aside__Price--Buy .linkBuy {
+  margin: 0 auto;
+  background-color: #f1c40f;
+  color: #fff;
+  padding: 0.8em 1em;
+  display: block;
+  width: 40%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #937604;
+  font-size: 1.2em;
+}
+.aside__Author .aside__Price--Contain .aside__Price--Buy .linkBuy:hover {
+  text-decoration: none;
 }
 .aside__Author .aside__Author--Contain {
   text-align: center;

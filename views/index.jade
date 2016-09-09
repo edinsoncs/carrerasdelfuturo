@@ -18,13 +18,14 @@ html(lang='en')
  body
   header.header.container-fluid
    div.row
-    section.header__Web.col-md-4
+    section.header__Web.col-md-10
      h1.title
       | Carrerasdelfuturo
-    //nav.header__Nav.col-md-8
+    nav.header__Nav.col-md-2
      ul.header__Nav--Ul
       li.list
-       a.link
+       a.link.payment
+        | Comprar
   section.subHeader.container-fluid
    div.row
     article.subHeader--Details.col-md-12
@@ -47,6 +48,10 @@ html(lang='en')
     article.col-md-6.header__Cours--Articl
      figure.Articl--Figure
       img(src="images/cours1.jpg", alt="")
+      video#showvideo
+       source(src="https://lib.tutellus.com/libraries/22/96/37/lib/1456679805036_3-480.mp4", type="video/mp4")
+      div.container--Icon
+       i.glyphicon.glyphicon-play.jsVideoPlay
     aside.col-md-6.header__Cours--Aside
      div.Aside__Contain
       header.Aside--Header
@@ -599,6 +604,16 @@ html(lang='en')
         span.jsClick.learningSum--Css
          | Leer Más
       aside.aside__Author.col-md-4.col-md-offset-2
+       div.aside__Price--Contain
+        header.aside__Price--Header
+         h4.title
+          | Precio:
+        div.aside__Price--Show
+         strong.price
+          $19.99
+        div.aside__Price--Buy
+         a.linkBuy
+          | Comprar
        div.aside__Author--Contain
         header.aside__Author--Header
          h4.title
