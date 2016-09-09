@@ -249,3 +249,8 @@ body {
   border-radius: 50%;
   border: 3px solid #33c17a;
 }
+@media screen and (min-width: 0) and (max-width: 769px) {
+  .subHeader--Details--Header {
+    width: 90% !important;
+  }
+}
