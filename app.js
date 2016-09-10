@@ -9,6 +9,18 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var panel = require('./routes/panel');
 
+var generatePassword = require('password-generator');
+
+var mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/carreras', function(err, res){
+  if(err){
+    return err;
+  } else {
+    console.log('conectado');
+  }
+});
+
 var app = express();
 
 // view engine setup
@@ -24,7 +36,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use('/new', users);
 app.use('/panel', panel);
 
 // catch 404 and forward to error handler

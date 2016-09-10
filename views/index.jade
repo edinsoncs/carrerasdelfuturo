@@ -14,6 +14,8 @@ html(lang='en')
     script(src="http://code.jquery.com/jquery-1.9.1.js")
     script(src="javascripts/bootstrap.min.js")
     script(src="javascripts/code-developer.js")
+    script(src='https://checkout.stripe.com/v2/checkout.js')
+
     //script(src="javascripts/code-developer2.js")
     //script(src="javascripts/code-developer3.js")
  body
@@ -25,7 +27,7 @@ html(lang='en')
     nav.header__Nav.col-xs-4.col-md-2
      ul.header__Nav--Ul
       li.list
-       a.link.payment
+       a.link.payment(data-key='pk_test_ePGZW1gHYBpGVrI8FzPlKkxn', data-image='https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xla1/v/t1.0-9/14238254_340746319649533_2462327527717628267_n.jpg?oh=d12c27735e2121fee794822b042961bd&oe=58415F35&__gda__=1480944280_49e8a978758ac7c751680116ee976aee', data-amount='1999', data-currency='usd', data-name='Carreras del Futuro', data-description='Curso profesional de frontend developer')
         | Comprar
   section.subHeader.container-fluid
    div.row
@@ -47,6 +49,7 @@ html(lang='en')
        | + Cursos profesionales  +  salida laboral  +  certificación online
 
  main.main
+
   section.container.header__Cours
    div.row
     article.col-md-6.header__Cours--Articl
@@ -616,7 +619,7 @@ html(lang='en')
          strong.price
           $19.99
         div.aside__Price--Buy
-         a.linkBuy
+         a.linkBuy(data-key='pk_test_ePGZW1gHYBpGVrI8FzPlKkxn', data-image='https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xla1/v/t1.0-9/14238254_340746319649533_2462327527717628267_n.jpg?oh=d12c27735e2121fee794822b042961bd&oe=58415F35&__gda__=1480944280_49e8a978758ac7c751680116ee976aee', data-amount='1999', data-currency='usd', data-name='Carreras del Futuro', data-description='Curso profesional de frontend developer')
           | Comprar
        div.aside__Author--Contain
         header.aside__Author--Header
