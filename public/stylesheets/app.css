@@ -310,6 +310,39 @@ body {
 .viewVideo .videoSecondary .video--De .linkNext:hover {
   text-decoration: none;
 }
+.viewLogin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2%;
+  margin-left: -15%;
+  width: 50%;
+}
+.viewLogin .login {
+  background-color: #fff;
+  padding: 1em;
+}
+.viewLogin .login .login--Fieldset input[type='email'],
+.viewLogin .login .login--Fieldset input[type='password'] {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  margin: 0 0 0.5em 0;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  outline: none;
+}
+.viewLogin .login .login--Fieldset input[type='submit'] {
+  background-color: #2196f3;
+  color: #fff;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  border: none;
+}
+.viewLogin .login .login--Fieldset:last-child {
+  text-align: center;
+}
 .successUser {
   position: fixed;
   z-index: 2999;
@@ -331,6 +364,11 @@ body {
 }
 .successUser .usershow {
   padding: 1em 0;
+}
+.successUser .usershow--Login a {
+  background-color: #e10700;
+  color: #fff;
+  padding: 0.5em 1em;
 }
 .successUserBg {
   position: fixed;

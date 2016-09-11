@@ -72,7 +72,7 @@ $(document).ready(function(){
 					"<div class='container successUser'>"+
 						"<div class='row'>"+
 							"<div class='col-md-12'>" +
-								"<header class='headerSuccess'><h2 class='title'>Cuenta Habilitada</h2></header>" +
+								"<header class='headerSuccess'><h2 class='title'>Felicidades</h2></header>" +
 								"<figure class='figure'><img src='https://scontent-grt2-1.xx.fbcdn.net/v/t1.0-1/p160x160/14238254_340746319649533_2462327527717628267_n.jpg?oh=32a8e777071336b6becfdd6b603f6ff7&oe=587EDB74' alt='carrerasdelfuturo'></figure>" +
 								"<div class='usershow'>"+
 									"<div class='usershow--Name'>"+
@@ -80,6 +80,9 @@ $(document).ready(function(){
 									"</div>"+
 									"<div class='usershow'>"+
 										"<span><strong>Password</strong>: "+data.password+"</span>"
+									+"</div>"+
+									"<div class='usershow--Login'>"+
+										"<a href='login' class='link'>Ingresar</a>"
 									+"</div>"+
 								"</div>"+
 							"</div>"+

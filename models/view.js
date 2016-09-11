@@ -124,6 +124,7 @@ module.exports = function(req, res, next, number) {
 
     }
 
+    
 
     switch (Number(number)) {
         case 1:
@@ -131,8 +132,10 @@ module.exports = function(req, res, next, number) {
                 title: 'Introducción - Frontend Developer',
                 titleVideo: number + '. Introducción',
                 titleSubmenu: 'Introducción',
-                titleSubMenuNext: 'Instalando Nuestro IDE',
-                video: videos.A1
+                titleSubmenuNext: 'Instalando Nuestro IDE',
+                video: videos.A1,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 2:
@@ -141,7 +144,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Instalando Nuestro IDE',
                 titleSubmenu: 'Instalando Nuestro IDE',
                 titleSubmenuNext: 'Configurando',
-                video: videos.A2
+                video: videos.A2,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 3:
@@ -150,7 +155,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Configurando',
                 titleSubmenu: 'Configurando',
                 titleSubmenuNext: 'Cambiar apariencia',
-                video: videos.A3
+                video: videos.A3,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 4:
@@ -159,7 +166,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Cambiar apariencia',
                 titleSubmenu: 'Cambiar apariencia',
                 titleSubmenuNext: 'Que es HTML',
-                video: videos.A4
+                video: videos.A4,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 5:
@@ -168,7 +177,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Que es HTML',
                 titleSubmenu: 'Que es HTML',
                 titleSubmenuNext: 'Que es CSS',
-                video: videos.A5
+                video: videos.A5,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 6:
@@ -177,7 +188,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Que es CSS',
                 titleSubmenu: 'Que es CSS',
                 titleSubmenuNext: 'Que es JS',
-                video: videos.A6
+                video: videos.A6,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 7:
@@ -186,7 +199,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Que es JS',
                 titleSubmenu: 'Que es JS',
                 titleSubmenuNext: 'Tipos de maquetación 1',
-                video: videos.A7
+                video: videos.A7,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 8:
@@ -195,7 +210,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Tipos de maquetación 1',
                 titleSubmenu: 'Tipos de maquetación 1',
                 titleSubmenuNext: 'Tipos de maquetación 2',
-                video: videos.A8
+                video: videos.A8,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 9:
@@ -204,7 +221,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Tipos de maquetación 2',
                 titleSubmenu: 'Tipos de maquetación 2',
                 titleSubmenuNext: 'Tipos de maquetación 3',
-                video: videos.A9
+                video: videos.A9,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 10:
@@ -213,7 +232,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Tipos de maquetación 3',
                 titleSubmenu: 'Tipos de maquetación 3',
                 titleSubmenuNext: 'Tipos de maquetación 4',
-                video: videos.A10
+                video: videos.A10,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 11:
@@ -222,7 +243,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Tipos de maquetación 4',
                 titleSubmenu: 'Tipos de maquetación 4',
                 titleSubmenuNext: 'Sintaxis HTML5',
-                video: videos.A11
+                video: videos.A11,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 12:
@@ -231,7 +254,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Sintaxis HTML5',
                 titleSubmenu: 'Sintaxis HTML5',
                 titleSubmenuNext: 'Modelo HTML5',
-                video: videos.A12
+                video: videos.A12,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -241,7 +266,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: 'Modelo HTML5',
                 titleSubmenuNext: '1. Etiquetas HTML5',
-                video: videos.A13
+                video: videos.A13,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -251,7 +278,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '1. Etiquetas HTML5',
                 titleSubmenuNext: '2. Etiquetas HTML5',
-                video: videos.A14
+                video: videos.A14,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 15:
@@ -260,7 +289,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '2. Etiquetas HTML5',
                 titleSubmenuNext: '3. Etiquetas HTML5',
-                video: videos.A15
+                video: videos.A15,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 16:
@@ -269,7 +300,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '3. Etiquetas HTML5',
                 titleSubmenuNext: '4. Etiquetas HTML5',
-                video: videos.A16
+                video: videos.A16,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 17:
@@ -278,7 +311,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '4. Etiquetas HTML5',
                 titleSubmenuNext: '5. Etiquetas HTML5',
-                video: videos.A17
+                video: videos.A17,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 18:
@@ -287,7 +322,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '5. Etiquetas HTML5',
                 titleSubmenuNext: '6. Etiquetas HTML5',
-                video: videos.A18
+                video: videos.A18,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 19:
@@ -296,7 +333,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '6. Etiquetas HTML5',
                 titleSubmenuNext: '7. Etiquetas HTML5',
-                video: videos.A19
+                video: videos.A19,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 20:
@@ -305,7 +344,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '7. Etiquetas HTML5',
                 titleSubmenuNext: '8. Etiquetas HTML5',
-                video: videos.A20
+                video: videos.A20,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 21:
@@ -314,7 +355,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '8. Etiquetas HTML5',
                 titleSubmenuNext: '9. Etiquetas HTML5',
-                video: videos.A21
+                video: videos.A21,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 22:
@@ -323,7 +366,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '9. Etiquetas HTML5',
                 titleSubmenuNext: '10. Etiquetas HTML5',
-                video: videos.A22
+                video: videos.A22,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 23:
@@ -332,7 +377,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '10. Etiquetas HTML5',
                 titleSubmenuNext: '11. Etiquetas HTML5',
-                video: videos.A23
+                video: videos.A23,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 24:
@@ -341,7 +388,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '11. Etiquetas HTML5',
                 titleSubmenuNext: '12. Etiquetas HTML5',
-                video: videos.A24
+                video: videos.A24,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 25:
@@ -350,7 +399,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '12. Etiquetas HTML5',
                 titleSubmenuNext: '13. Etiquetas HTML5',
-                video: videos.A25
+                video: videos.A25,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 26:
@@ -359,7 +410,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '13. Etiquetas HTML5',
                 titleSubmenuNext: '14. Etiquetas HTML5',
-                video: videos.A26
+                video: videos.A26,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 27:
@@ -368,7 +421,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '14. Etiquetas HTML5',
                 titleSubmenuNext: '15. Etiquetas HTML5',
-                video: videos.A27
+                video: videos.A27,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 28:
@@ -377,7 +432,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '15. Etiquetas HTML5',
                 titleSubmenuNext: '16. Etiquetas HTML5',
-                video: videos.A28
+                video: videos.A28,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 29:
@@ -386,7 +443,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '16. Etiquetas HTML5',
                 titleSubmenuNext: '17. Etiquetas HTML5',
-                video: videos.A29
+                video: videos.A29,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 30:
@@ -395,7 +454,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '17. Etiquetas HTML5',
                 titleSubmenuNext: '18. Etiquetas HTML5',
-                video: videos.A30
+                video: videos.A30,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 31:
@@ -404,7 +465,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '18. Etiquetas HTML5',
                 titleSubmenuNext: '19. Etiquetas HTML5',
-                video: videos.A31
+                video: videos.A31,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 32:
@@ -413,7 +476,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '19. Etiquetas HTML5',
                 titleSubmenuNext: '20. Etiquetas HTML5',
-                video: videos.A32
+                video: videos.A32,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 33:
@@ -422,7 +487,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '20. Etiquetas HTML5',
                 titleSubmenuNext: '21. Etiquetas HTML5',
-                video: videos.A33
+                video: videos.A33,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 34:
@@ -431,7 +498,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Etiquetas HTML5',
                 titleSubmenu: '21. Etiquetas HTML5',
                 titleSubmenuNext: '1. Css - Stylesheets',
-                video: videos.A34
+                video: videos.A34,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -441,7 +510,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '1. Css - Stylesheets',
                 titleSubmenuNext: '2. Css - Stylesheets',
-                video: videos.A35
+                video: videos.A35,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 36:
@@ -450,7 +521,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '1. Css - Stylesheets',
                 titleSubmenuNext: '2. Css - Stylesheets',
-                video: videos.A36
+                video: videos.A36,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 37:
@@ -459,7 +532,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '2. Css - Stylesheets',
                 titleSubmenuNext: '3. Css - Stylesheets',
-                video: videos.A37
+                video: videos.A37,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 38:
@@ -468,7 +543,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '3. Css - Stylesheets',
                 titleSubmenuNext: '4. Css - Stylesheets',
-                video: videos.A38
+                video: videos.A38,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 39:
@@ -477,7 +554,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '4. Css - Stylesheets',
                 titleSubmenuNext: '5. Css - Stylesheets',
-                video: videos.A39
+                video: videos.A39,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 40:
@@ -486,7 +565,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '5. Css - Stylesheets',
                 titleSubmenuNext: '6. Css - Stylesheets',
-                video: videos.A40
+                video: videos.A40,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 41:
@@ -495,7 +576,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '6. Css - Stylesheets',
                 titleSubmenuNext: '7. Css - Stylesheets',
-                video: videos.A41
+                video: videos.A41,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 42:
@@ -504,7 +587,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '7. Css - Stylesheets',
                 titleSubmenuNext: '8. Css - Stylesheets',
-                video: videos.A42
+                video: videos.A42,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 43:
@@ -513,7 +598,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '8. Css - Stylesheets',
                 titleSubmenuNext: '9. Css - Stylesheets',
-                video: videos.A43
+                video: videos.A43,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 44:
@@ -522,7 +609,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '9. Css - Stylesheets',
                 titleSubmenuNext: '10. Css - Stylesheets',
-                video: videos.A44
+                video: videos.A44,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 45:
@@ -531,7 +620,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '10. Css - Stylesheets',
                 titleSubmenuNext: '11. Css - Stylesheets',
-                video: videos.A45
+                video: videos.A45,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 46:
@@ -540,7 +631,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '11. Css - Stylesheets',
                 titleSubmenuNext: '12. Css - Stylesheets',
-                video: videos.A46
+                video: videos.A46,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 47:
@@ -549,7 +642,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '12. Css - Stylesheets',
                 titleSubmenuNext: '13. Css - Stylesheets',
-                video: videos.A47
+                video: videos.A47,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 48:
@@ -558,7 +653,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '13. Css - Stylesheets',
                 titleSubmenuNext: '14. Css - Stylesheets',
-                video: videos.A48
+                video: videos.A48,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 49:
@@ -567,7 +664,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '14. Css - Stylesheets',
                 titleSubmenuNext: '15. Css - Stylesheets',
-                video: videos.A49
+                video: videos.A49,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 50:
@@ -576,7 +675,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '15. Css - Stylesheets',
                 titleSubmenuNext: '16. Css - Stylesheets',
-                video: videos.A50
+                video: videos.A50,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 51:
@@ -585,7 +686,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '16. Css - Stylesheets',
                 titleSubmenuNext: '17. Css - Stylesheets',
-                video: videos.A51
+                video: videos.A51,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 52:
@@ -594,7 +697,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '17. Css - Stylesheets',
                 titleSubmenuNext: '18. Css - Stylesheets',
-                video: videos.A52
+                video: videos.A52,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
         case 53:
@@ -603,7 +708,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '18. Css - Stylesheets',
                 titleSubmenuNext: '19. Css - Stylesheets',
-                video: videos.A53
+                video: videos.A53,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -613,7 +720,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '19. Css - Stylesheets',
                 titleSubmenuNext: '20. Css - Stylesheets',
-                video: videos.A54
+                video: videos.A54,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -623,7 +732,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '20. Css - Stylesheets',
                 titleSubmenuNext: '21. Css - Stylesheets',
-                video: videos.A55
+                video: videos.A55,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -634,7 +745,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '21. Css - Stylesheets',
                 titleSubmenuNext: '22. Css - Stylesheets',
-                video: videos.A56
+                video: videos.A56,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -644,7 +757,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '22. Css - Stylesheets',
                 titleSubmenuNext: '23. Css - Stylesheets',
-                video: videos.A57
+                video: videos.A57,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -654,7 +769,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '23. Css - Stylesheets',
                 titleSubmenuNext: '24. Css - Stylesheets',
-                video: videos.A58
+                video: videos.A58,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -664,7 +781,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '24. Css - Stylesheets',
                 titleSubmenuNext: '25. Css - Stylesheets',
-                video: videos.A59
+                video: videos.A59,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -674,7 +793,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '25. Css - Stylesheets',
                 titleSubmenuNext: '26. Css - Stylesheets',
-                video: videos.A60
+                video: videos.A60,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -684,7 +805,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '26. Css - Stylesheets',
                 titleSubmenuNext: '27. Css - Stylesheets',
-                video: videos.A61
+                video: videos.A61,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -694,7 +817,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '27. Css - Stylesheets',
                 titleSubmenuNext: '28. Css - Stylesheets',
-                video: videos.A62
+                video: videos.A62,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -704,7 +829,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '28. Css - Stylesheets',
                 titleSubmenuNext: '29. Css - Stylesheets',
-                video: videos.A63
+                video: videos.A63,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -714,7 +841,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '29. Css - Stylesheets',
                 titleSubmenuNext: '30. Css - Stylesheets',
-                video: videos.A64
+                video: videos.A64,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -724,7 +853,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '30. Css - Stylesheets',
                 titleSubmenuNext: '31. Css - Stylesheets',
-                video: videos.A65
+                video: videos.A65,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -734,7 +865,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '31. Css - Stylesheets',
                 titleSubmenuNext: '32. Css - Stylesheets',
-                video: videos.A66
+                video: videos.A66,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -744,7 +877,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '32. Css - Stylesheets',
                 titleSubmenuNext: '33. Css - Stylesheets',
-                video: videos.A67
+                video: videos.A67,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -754,7 +889,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '33. Css - Stylesheets',
                 titleSubmenuNext: '34. Css - Stylesheets',
-                video: videos.A68
+                video: videos.A68,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -764,7 +901,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '34. Css - Stylesheets',
                 titleSubmenuNext: '35. Css - Stylesheets',
-                video: videos.A69
+                video: videos.A69,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -774,7 +913,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '35. Css - Stylesheets',
                 titleSubmenuNext: '36. Css - Stylesheets',
-                video: videos.A70
+                video: videos.A70,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -785,7 +926,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Css - Stylesheets',
                 titleSubmenu: '36. Css - Stylesheets',
                 titleSubmenuNext: '1 - Javascript',
-                video: videos.A71
+                video: videos.A71,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -796,7 +939,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '1 - Javascript',
                 titleSubmenuNext: '2 - Javascript',
-                video: videos.A72
+                video: videos.A72,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -806,7 +951,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '2 - Javascript',
                 titleSubmenuNext: '3 - Javascript',
-                video: videos.A73
+                video: videos.A73,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -816,7 +963,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '3 - Javascript',
                 titleSubmenuNext: '4 - Javascript',
-                video: videos.A74
+                video: videos.A74,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -826,7 +975,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '4 - Javascript',
                 titleSubmenuNext: '5 - Javascript',
-                video: videos.A75
+                video: videos.A75,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -836,7 +987,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '5 - Javascript',
                 titleSubmenuNext: '6 - Javascript',
-                video: videos.A76
+                video: videos.A76,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -846,7 +999,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '6 - Javascript',
                 titleSubmenuNext: '7 - Javascript',
-                video: videos.A77
+                video: videos.A77,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -856,7 +1011,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '7 - Javascript',
                 titleSubmenuNext: '8 - Javascript',
-                video: videos.A78
+                video: videos.A78,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -866,7 +1023,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '8 - Javascript',
                 titleSubmenuNext: '9 - Javascript',
-                video: videos.A79
+                video: videos.A79,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -876,7 +1035,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '9 - Javascript',
                 titleSubmenuNext: '10 - Javascript',
-                video: videos.A80
+                video: videos.A80,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -887,7 +1048,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '10 - Javascript',
                 titleSubmenuNext: '11 - Javascript',
-                video: videos.A81
+                video: videos.A81,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -898,7 +1061,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '11 - Javascript',
                 titleSubmenuNext: '12 - Javascript',
-                video: videos.A82
+                video: videos.A82,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -908,7 +1073,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '12 - Javascript',
                 titleSubmenuNext: '13 - Javascript',
-                video: videos.A83
+                video: videos.A83,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -918,7 +1085,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '13 - Javascript',
                 titleSubmenuNext: '14 - Javascript',
-                video: videos.A84
+                video: videos.A84,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -928,7 +1097,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Javascript',
                 titleSubmenu: '14 - Javascript',
                 titleSubmenuNext: '1. Jquery',
-                video: videos.A85
+                video: videos.A85,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -938,7 +1109,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '1. Jquery',
                 titleSubmenuNext: '2. Jquery',
-                video: videos.A86
+                video: videos.A86,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -948,7 +1121,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '2. Jquery',
                 titleSubmenuNext: '3. Jquery',
-                video: videos.A87
+                video: videos.A87,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -958,7 +1133,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '3. Jquery',
                 titleSubmenuNext: '4. Jquery',
-                video: videos.A88
+                video: videos.A88,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -968,7 +1145,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '4. Jquery',
                 titleSubmenuNext: '5. Jquery',
-                video: videos.A89
+                video: videos.A89,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -978,7 +1157,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '5. Jquery',
                 titleSubmenuNext: '6. Jquery',
-                video: videos.A90
+                video: videos.A90,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -988,7 +1169,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '6. Jquery',
                 titleSubmenuNext: '7. Jquery',
-                video: videos.A91
+                video: videos.A91,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -998,7 +1181,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '7. Jquery',
                 titleSubmenuNext: '8. Jquery',
-                video: videos.A92
+                video: videos.A92,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1008,7 +1193,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '8. Jquery',
                 titleSubmenuNext: '9. Jquery',
-                video: videos.A93
+                video: videos.A93,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1018,7 +1205,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '9. Jquery',
                 titleSubmenuNext: '10. Jquery',
-                video: videos.A94
+                video: videos.A94,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1028,7 +1217,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '10. Jquery',
                 titleSubmenuNext: '11. Jquery',
-                video: videos.A95
+                video: videos.A95,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1038,7 +1229,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '11. Jquery',
                 titleSubmenuNext: '12. Jquery',
-                video: videos.A96
+                video: videos.A96,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1048,7 +1241,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '12. Jquery',
                 titleSubmenuNext: '13. Jquery',
-                video: videos.A97
+                video: videos.A97,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1058,7 +1253,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '13. Jquery',
                 titleSubmenuNext: '14. Jquery',
-                video: videos.A98
+                video: videos.A98,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1068,7 +1265,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '14. Jquery',
                 titleSubmenuNext: '15. Jquery',
-                video: videos.A99
+                video: videos.A99,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1078,7 +1277,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jquery',
                 titleSubmenu: '15. Jquery',
                 titleSubmenuNext: '1. Git - Github',
-                video: videos.A100
+                video: videos.A100,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1089,7 +1290,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Git - Github',
                 titleSubmenu: '1. Git - Github',
                 titleSubmenuNext: '2. Git - Github',
-                video: videos.A101
+                video: videos.A101,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1099,7 +1302,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Git - Github',
                 titleSubmenu: '2. Git - Github',
                 titleSubmenuNext: '3. Git - Github',
-                video: videos.A102
+                video: videos.A102,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1109,7 +1314,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Git - Github',
                 titleSubmenu: '3. Git - Github',
                 titleSubmenuNext: '4. Git - Github',
-                video: videos.A103
+                video: videos.A103,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1119,7 +1326,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Git - Github',
                 titleSubmenu: '4. Git - Github',
                 titleSubmenuNext: '5. Git - Github',
-                video: videos.A104
+                video: videos.A104,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1129,7 +1338,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Git - Github',
                 titleSubmenu: '5. Git - Github',
                 titleSubmenuNext: '6. Git - Github',
-                video: videos.A105
+                video: videos.A105,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1139,7 +1350,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Git - Github',
                 titleSubmenu: '6. Git - Github',
                 titleSubmenuNext: '7. Git - Github',
-                video: videos.A106
+                video: videos.A106,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1150,7 +1363,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Git - Github',
                 titleSubmenu: '7. Git - Github',
                 titleSubmenuNext: '1 - Responsive y Mobil First',
-                video: videos.A107
+                video: videos.A107,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1160,7 +1375,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Responsive y Mobil First',
                 titleSubmenu: '1. Responsive y Mobil First',
                 titleSubmenuNext: '2. Responsive y Mobil First',
-                video: videos.A108
+                video: videos.A108,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1170,7 +1387,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Responsive y Mobil First',
                 titleSubmenu: '2. Responsive y Mobil First',
                 titleSubmenuNext: '3. Responsive y Mobil First',
-                video: videos.A109
+                video: videos.A109,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1180,7 +1399,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Responsive y Mobil First',
                 titleSubmenu: '3. Responsive y Mobil First',
                 titleSubmenuNext: '4. Responsive y Mobil First',
-                video: videos.A110
+                video: videos.A110,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1190,7 +1411,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Responsive y Mobil First',
                 titleSubmenu: '4. Responsive y Mobil First',
                 titleSubmenuNext: '1 - Jade',
-                video: videos.A111
+                video: videos.A111,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1201,7 +1424,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jade',
                 titleSubmenu: '1. Jade',
                 titleSubmenuNext: '2 - Jade',
-                video: videos.A112
+                video: videos.A112,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1211,7 +1436,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jade',
                 titleSubmenu: '2. Jade',
                 titleSubmenuNext: '3 - Jade',
-                video: videos.A113
+                video: videos.A113,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1221,7 +1448,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jade',
                 titleSubmenu: '3. Jade',
                 titleSubmenuNext: '4 - Jade',
-                video: videos.A114
+                video: videos.A114,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1231,7 +1460,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Jade',
                 titleSubmenu: '4. Jade',
                 titleSubmenuNext: '1 - Preprocesador Css',
-                video: videos.A115
+                video: videos.A115,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1241,7 +1472,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Preprocesador Css',
                 titleSubmenu: '1. Preprocesador Css',
                 titleSubmenuNext: '2 - Preprocesador Css',
-                video: videos.A116
+                video: videos.A116,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1251,7 +1484,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Preprocesador Css',
                 titleSubmenu: '2. Preprocesador Css',
                 titleSubmenuNext: '3 - Preprocesador Css',
-                video: videos.A117
+                video: videos.A117,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1261,7 +1496,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Preprocesador Css',
                 titleSubmenu: '3. Preprocesador Css',
                 titleSubmenuNext: '1 - bootstrap',
-                video: videos.A118
+                video: videos.A118,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1271,7 +1508,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Bootstrap',
                 titleSubmenu: '1. Bootstrap',
                 titleSubmenuNext: '2 - bootstrap',
-                video: videos.A119
+                video: videos.A119,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1281,7 +1520,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Bootstrap',
                 titleSubmenu: '2. Bootstrap',
                 titleSubmenuNext: '3 - bootstrap',
-                video: videos.A120
+                video: videos.A120,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 
@@ -1291,7 +1532,9 @@ module.exports = function(req, res, next, number) {
                 titleVideo: number + '. Bootstrap',
                 titleSubmenu: '3. Bootstrap',
                 titleSubmenuNext: '1. Introduccion',
-                video: videos.A121
+                video: videos.A121,
+                number: number,
+                numberNext: Number(number) + 1
             });
             break;
 

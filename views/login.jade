@@ -12,14 +12,9 @@ html(lang='en')
     link(rel="stylesheet", href="../stylesheets/bootstrap-theme.css")
     link(rel="stylesheet", href="../stylesheets/app.css")
 
-    //Video
-    link(rel="stylesheet", href="https://vjs.zencdn.net/5.9.2/video-js.css")
-
-
     script(src="http://code.jquery.com/jquery-1.9.1.js")
     script(src="../javascripts/bootstrap.min.js")
     script(src="../javascripts/code-developer.js")
-    script(src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js")
     //script(src="javascripts/code-developer2.js")
     //script(src="javascripts/code-developer3.js")
  body
@@ -29,19 +24,14 @@ html(lang='en')
      h1.title
       | Carrerasdelfuturo
 
-  main.container.viewVideo
+  main.container.viewLogin
    div.row
-    section.videoPrimary.col-md-12
-     header.videoPrimary--Header
-      h2.title
-       | #{titleVideo}
-     video(id="my-video" , controls class="video-js", data-setup="{}")
-      source(src="#{video}", type="video/mp4")
-    div.videoSecondary.col-md-12
-     div.video--Iz.col-md-6
-      a.linkPrev(href='#{number}')
-       | #{titleSubmenu}
-     div.video--De.col-md-6
-      a.linkNext(href="#{numberNext}")
-       | #{titleSubmenuNext}
-  script(src="https://vjs.zencdn.net/5.9.2/video.js")
+    div.col-md-8
+     form.login(action="acceso", method="post")
+      fieldset.login--Fieldset
+       input(type="email", placeholder="Ingrese email", name="email")
+      fieldset.login--Fieldset
+       input(type="password", placeholder="Password", name="password")
+      fieldset.login--Fieldset
+       input(type="submit", value="Acceder")
+  

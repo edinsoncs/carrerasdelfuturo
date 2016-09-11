@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="../stylesheets/bootstrap-theme.css">
     <link rel="stylesheet" href="../stylesheets/app.css">
-    <!--Video-->
-    <link rel="stylesheet" href="https://vjs.zencdn.net/5.9.2/video-js.css">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="../javascripts/bootstrap.min.js"></script>
     <script src="../javascripts/code-developer.js"></script>
-    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
     <!--script(src="javascripts/code-developer2.js")-->
     <!--script(src="javascripts/code-developer3.js")-->
   </head>
@@ -28,21 +25,21 @@
       </section>
     </div>
   </header>
-  <main class="container viewVideo">
+  <main class="container viewLogin">
     <div class="row">
-      <section class="videoPrimary col-md-12">
-        <header class="videoPrimary--Header">
-          <h2 class="title"></h2>
-        </header>
-        <video id="my-video" controls data-setup="{}" class="video-js">
-          <source src="undefined" type="video/mp4">
-        </video>
-      </section>
-      <div class="videoSecondary col-md-12">
-        <div class="video--Iz col-md-6"><a href="undefined" class="linkPrev"></a></div>
-        <div class="video--De col-md-6"><a href="undefined" class="linkNext"></a></div>
+      <div class="col-md-8">
+        <form action="acceso" method="post" class="login">
+          <fieldset class="login--Fieldset">
+            <input type="email" placeholder="Ingrese email" name="email">
+          </fieldset>
+          <fieldset class="login--Fieldset">
+            <input type="password" placeholder="Password" name="password">
+          </fieldset>
+          <fieldset class="login--Fieldset">
+            <input type="submit" value="Acceder">
+          </fieldset>
+        </form>
       </div>
     </div>
   </main>
-  <script src="https://vjs.zencdn.net/5.9.2/video.js"></script>
 </body>
