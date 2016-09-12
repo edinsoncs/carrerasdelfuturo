@@ -36,9 +36,19 @@ body
 				list-style-type none
 				line-height 34px
 				margin 0.5em 0
+				display inline-block
 				.link.payment
 					margin 5em 0 0 0
 					background-color #e10700
+					text-decoration none
+					color white
+					padding 0.5em 1em
+					cursor pointer
+					border-radius 5px
+					font-size 1.2em
+				.link.login
+					margin 5em 0 0 1em
+					background-color #2980b9
 					text-decoration none
 					color white
 					padding 0.5em 1em
@@ -344,6 +354,9 @@ body
 		.header__Nav--Ul
 			.list
 				.payment
+					display none
+			.list
+				.login 
 					display none
 	.subHeader .subHeader--Details
 		margin-top -5em

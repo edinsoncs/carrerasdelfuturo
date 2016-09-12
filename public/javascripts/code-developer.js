@@ -92,4 +92,15 @@ $(document).ready(function(){
 	}
 
 
+	function slider(t){
+		var _img = $(".subHeader");
+		var _img__Other = '../images/bg2.jpg';
+
+		setTimeout(function(){
+			$(_img).css('background-image', 'url("'+_img__Other+'")').fadeIn('slow');
+		}, t);
+
+
+	}
+	slider(100000);
 });
