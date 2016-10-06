@@ -38,6 +38,7 @@ body {
 }
 .header .header__Nav .header__Nav--Ul {
   margin-bottom: 0;
+  text-align: center;
 }
 .header .header__Nav .header__Nav--Ul .list {
   list-style-type: none;
