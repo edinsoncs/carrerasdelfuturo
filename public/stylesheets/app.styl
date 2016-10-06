@@ -12,7 +12,7 @@ body
 
 .header
 	background-color #2c3e50
-	line-height 50px
+	line-height 55px
 	padding-left 2em
 	padding-right 2em
 	box-shadow 0 2px 3px #4a6989
@@ -22,9 +22,9 @@ body
 	right 0
 	z-index 999
 	.header__Web
-		padding-top 0.5em
-		padding-bottom 0.5em
-		.title
+		padding-top 0.8em
+		padding-bottom 0.8em
+		.titleHeader
 			color $blanco
 			font-family 'Titillium Web', sans-serif
 			text-transform uppercase
@@ -44,7 +44,7 @@ body
 					color white
 					padding 0.5em 1em
 					cursor pointer
-					border-radius 5px
+					border-radius 3px
 					font-size 1.2em
 				.link.login
 					margin 5em 0 0 1em
@@ -53,7 +53,7 @@ body
 					color white
 					padding 0.5em 1em
 					cursor pointer
-					border-radius 5px
+					border-radius 3px
 					font-size 1.2em
 				.formPayment
 					input[type='submit']
@@ -64,6 +64,63 @@ body
 						border-radius 4px
 						border none
 						
+.subHeaderHome
+	background linear-gradient(to right, rgba(32,179,93,1) 0%, rgba(46,204,113,1) 52%, rgba(60,222,128,1) 99%, rgba(60,222,128,1) 100%)
+	background  -ms-linear-gradient(left, rgba(32,179,93,1) 0%, rgba(46,204,113,1) 52%, rgba(60,222,128,1) 99%, rgba(60,222,128,1) 100%)
+	background -moz-linear-gradient(to right, rgba(32,179,93,1) 0%, rgba(46,204,113,1) 52%, rgba(60,222,128,1) 99%, rgba(60,222,128,1) 100%)
+	background -webkit-linear-gradient(to right, rgba(32,179,93,1) 0%, rgba(46,204,113,1) 52%, rgba(60,222,128,1) 99%, rgba(60,222,128,1) 100%)
+	height 400px
+	background-size cover
+	background-position center top
+	overflow hidden
+	position relative
+	.homeSlider
+		position relative
+		.homeSlider__Show
+			position absolute
+			right 0
+			top 0
+			right 0
+			width 100%
+			display flex
+			justify-content space-between
+			align-items center
+			.homeSlider__Show--Txt
+				.title
+					color $blanco
+					font-family 'Oswald', sans-serif
+					text-transform capitalize
+				.button .button__Link
+					padding 1em
+					background linear-gradient(#4285f4, #2775d1)
+					background -moz-linear-gradient(#4285f4, #2775d1)
+					background -webkit-linear-gradient(#4285f4, #2775d1)
+					background -mz-linear-gradient(#4285f4, #2775d1)
+					color white
+					display block
+					width 120px
+					text-align center
+					margin 2em 0 0 0 
+					border-radius 50px
+					box-shadow 0 4px 0 #244883
+					&:hover
+						text-decoration none
+						box-shadow 0 4px 0 #2775d1
+						background linear-gradient(#244883, #244883)
+						background -webkit-linear-gradient(#244883, #244883)
+						background -moz-linear-gradient(#244883, #244883)
+						background -mz-linear-gradient(#244883, #244883)
+						
+						
+			.homeSlider__Show--Figure
+				margin-top 50px
+				animation homePerson 1s
+				opacity 1
+				@keyframes homePerson
+					50% 
+						opacity 0.5
+	
+
 .subHeader
 	background-color black
 	background-image url('../images/bg.jpg')
@@ -345,6 +402,71 @@ body
 	left 0
 	right 0
 	background-color rgba(35, 35, 35, 0.81)
+
+.homeMain
+	padding 2em 0
+	.home__Top
+		text-align center
+		.home__Top--Header
+			margin 0 auto!important
+			float none
+			border-bottom 1px solid #244883
+			padding-bottom 1em
+			.title
+				color #42474D!important
+				font-weight 700
+		.home__Top--Description
+			padding 1em 0
+			.description
+				font-size 1.2em
+	
+	.home__Top--Two
+		font-size 30px
+		padding 2rem 0
+		.home__Top--Two--Articl
+			text-align center
+			.figure img
+				display block
+				margin 0 auto
+			.headerArticl
+				padding 12px 0
+			.description .show
+				font-size 1.5rem
+	.home__Top--Tree--Header
+		padding 1.5em 0
+		text-align center
+		.title
+			font-size 2.2em
+	.home__Top--Tree
+		.cours
+			.cours--Figure img
+				width 100%
+				display block
+			.cours--Header
+				background-color white
+				display block
+				padding 1em
+				text-align center
+	.home__BottomLeft
+		padding 5em 0
+		.headerLeft
+			display block
+			float none
+			.title
+				font-size 2em
+				margin-bottom 12px
+				border-bottom 1px solid #244883
+				padding-bottom 0.3em
+				font-family 'Oswald', sans-serif
+		.descriptionLeft
+			padding-bottom 6em
+	.home__BottomAside
+		padding 5em 0 0 0
+
+
+.title {
+	color: #42474d!important;
+}
 
 @media screen and (min-width:0) and (max-width:769px)
 	body 

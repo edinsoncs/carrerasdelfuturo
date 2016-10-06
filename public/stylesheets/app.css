@@ -16,7 +16,7 @@ body {
 }
 .header {
   background-color: #2c3e50;
-  line-height: 50px;
+  line-height: 55px;
   padding-left: 2em;
   padding-right: 2em;
   box-shadow: 0 2px 3px #4a6989;
@@ -27,10 +27,10 @@ body {
   z-index: 999;
 }
 .header .header__Web {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
 }
-.header .header__Web .title {
+.header .header__Web .titleHeader {
   color: #fff;
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ body {
   color: #fff;
   padding: 0.5em 1em;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 1.2em;
 }
 .header .header__Nav .header__Nav--Ul .list .link.login {
@@ -62,7 +62,7 @@ body {
   color: #fff;
   padding: 0.5em 1em;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 1.2em;
 }
 .header .header__Nav .header__Nav--Ul .list .formPayment input[type='submit'] {
@@ -72,6 +72,82 @@ body {
   outline: medium none;
   border-radius: 4px;
   border: none;
+}
+.subHeaderHome {
+  background: linear-gradient(to right, #20b35d 0%, #2ecc71 52%, #3cde80 99%, #3cde80 100%);
+  background: -ms-linear-gradient(left, #20b35d 0%, #2ecc71 52%, #3cde80 99%, #3cde80 100%);
+  background: -moz-linear-gradient(to right, #20b35d 0%, #2ecc71 52%, #3cde80 99%, #3cde80 100%);
+  background: -webkit-linear-gradient(to right, #20b35d 0%, #2ecc71 52%, #3cde80 99%, #3cde80 100%);
+  height: 400px;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  position: relative;
+}
+.subHeaderHome .homeSlider {
+  position: relative;
+}
+.subHeaderHome .homeSlider .homeSlider__Show {
+  position: absolute;
+  right: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subHeaderHome .homeSlider .homeSlider__Show .homeSlider__Show--Txt .title {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+}
+.subHeaderHome .homeSlider .homeSlider__Show .homeSlider__Show--Txt .button .button__Link {
+  padding: 1em;
+  background: linear-gradient(#4285f4, #2775d1);
+  background: -moz-linear-gradient(#4285f4, #2775d1);
+  background: -webkit-linear-gradient(#4285f4, #2775d1);
+  background: -mz-linear-gradient(#4285f4, #2775d1);
+  color: #fff;
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin: 2em 0 0 0;
+  border-radius: 50px;
+  box-shadow: 0 4px 0 #244883;
+}
+.subHeaderHome .homeSlider .homeSlider__Show .homeSlider__Show--Txt .button .button__Link:hover {
+  text-decoration: none;
+  box-shadow: 0 4px 0 #2775d1;
+  background: linear-gradient(#244883, #244883);
+  background: -webkit-linear-gradient(#244883, #244883);
+  background: -moz-linear-gradient(#244883, #244883);
+  background: -mz-linear-gradient(#244883, #244883);
+}
+.subHeaderHome .homeSlider .homeSlider__Show .homeSlider__Show--Figure {
+  margin-top: 50px;
+  animation: homePerson 1s;
+  opacity: 1;
+}
+@-moz-keyframes homePerson {
+  50% {
+    opacity: 0.5;
+  }
+}
+@-webkit-keyframes homePerson {
+  50% {
+    opacity: 0.5;
+  }
+}
+@-o-keyframes homePerson {
+  50% {
+    opacity: 0.5;
+  }
+}
+@keyframes homePerson {
+  50% {
+    opacity: 0.5;
+  }
 }
 .subHeader {
   background-color: #000;
@@ -388,6 +464,85 @@ body {
   left: 0;
   right: 0;
   background-color: rgba(35,35,35,0.81);
+}
+.homeMain {
+  padding: 2em 0;
+}
+.homeMain .home__Top {
+  text-align: center;
+}
+.homeMain .home__Top .home__Top--Header {
+  margin: 0 auto !important;
+  float: none;
+  border-bottom: 1px solid #244883;
+  padding-bottom: 1em;
+}
+.homeMain .home__Top .home__Top--Header .title {
+  color: #42474d !important;
+  font-weight: 700;
+}
+.homeMain .home__Top .home__Top--Description {
+  padding: 1em 0;
+}
+.homeMain .home__Top .home__Top--Description .description {
+  font-size: 1.2em;
+}
+.homeMain .home__Top--Two {
+  font-size: 30px;
+  padding: 2rem 0;
+}
+.homeMain .home__Top--Two .home__Top--Two--Articl {
+  text-align: center;
+}
+.homeMain .home__Top--Two .home__Top--Two--Articl .figure img {
+  display: block;
+  margin: 0 auto;
+}
+.homeMain .home__Top--Two .home__Top--Two--Articl .headerArticl {
+  padding: 12px 0;
+}
+.homeMain .home__Top--Two .home__Top--Two--Articl .description .show {
+  font-size: 1.5rem;
+}
+.homeMain .home__Top--Tree--Header {
+  padding: 1.5em 0;
+  text-align: center;
+}
+.homeMain .home__Top--Tree--Header .title {
+  font-size: 2.2em;
+}
+.homeMain .home__Top--Tree .cours .cours--Figure img {
+  width: 100%;
+  display: block;
+}
+.homeMain .home__Top--Tree .cours .cours--Header {
+  background-color: #fff;
+  display: block;
+  padding: 1em;
+  text-align: center;
+}
+.homeMain .home__BottomLeft {
+  padding: 5em 0;
+}
+.homeMain .home__BottomLeft .headerLeft {
+  display: block;
+  float: none;
+}
+.homeMain .home__BottomLeft .headerLeft .title {
+  font-size: 2em;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #244883;
+  padding-bottom: 0.3em;
+  font-family: 'Oswald', sans-serif;
+}
+.homeMain .home__BottomLeft .descriptionLeft {
+  padding-bottom: 6em;
+}
+.homeMain .home__BottomAside {
+  padding: 5em 0 0 0;
+}
+.title {
+  color: #42474d !important;
 }
 @media screen and (min-width: 0) and (max-width: 769px) {
   .subHeader--Details--Header {
