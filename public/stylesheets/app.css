@@ -510,6 +510,7 @@ body {
 }
 .homeMain .home__Top--Tree--Header .title {
   font-size: 2.2em;
+  font-weight: 700;
 }
 .homeMain .home__Top--Tree .cours .cours--Figure img {
   width: 100%;
@@ -541,8 +542,48 @@ body {
 .homeMain .home__BottomAside {
   padding: 5em 0 0 0;
 }
+.homeMain .home__BottomAside .videoAside {
+  width: 100%;
+  opacity: 0.7;
+}
+.bottomFooter {
+  background-color: #2c3e50;
+  height: 200px;
+  position: relative;
+}
+.bottomFooter .bottomFooter__Articl {
+  position: absolute;
+  text-align: center;
+  left: 20%;
+  top: 28%;
+}
+.bottomFooter .bottomFooter__Articl .bottomFooter__Articl--Header .titleBottom {
+  color: #fff;
+  font-size: 2.5em;
+  font-family: 'Oswald', sans-serif;
+}
+.footer {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.footer .socials {
+  text-align: right;
+}
+.footer .socials .list {
+  display: inline-block;
+  margin-left: 1em;
+}
 .title {
   color: #42474d !important;
+}
+.uRightText {
+  text-align: right;
+}
+.uFloatRight {
+  float: right !important;
+}
+.uPrimaryMargin {
+  margin-right: 5em;
 }
 @media screen and (min-width: 0) and (max-width: 769px) {
   .subHeader--Details--Header {
