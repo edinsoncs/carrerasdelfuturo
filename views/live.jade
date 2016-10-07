@@ -8,22 +8,22 @@ html(lang='en')
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
 
-    link(rel="stylesheet", href="stylesheets/bootstrap.min.css")
-    link(rel="stylesheet", href="stylesheets/bootstrap-theme.css")
-    link(rel="stylesheet", href="stylesheets/app.css")
-    link(rel="stylesheet", href="stylesheets/font.css")
+    link(rel="stylesheet", href="../stylesheets/bootstrap.min.css")
+    link(rel="stylesheet", href="../stylesheets/bootstrap-theme.css")
+    link(rel="stylesheet", href="../stylesheets/app.css")
+    link(rel="stylesheet", href="../stylesheets/font.css")
 
     //Video
     link(rel="stylesheet", href="https://vjs.zencdn.net/5.9.2/video-js.css")
 
 
     script(src="http://code.jquery.com/jquery-1.9.1.js")
-    script(src="javascripts/bootstrap.min.js")
-    script(src="javascripts/code-developer.js")
+    script(src="../javascripts/bootstrap.min.js")
+    script(src="../javascripts/code-developer.js")
     script(src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js")
-    script(src="javascripts/utils.js")
-    //script(src="javascripts/code-developer2.js")
-    //script(src="javascripts/code-developer3.js")
+    script(src="../javascripts/utils.js")
+    //script(src="../javascripts/code-developer2.js")
+    //script(src="../javascripts/code-developer3.js")
  body.panelPlatform
   header.header.container-fluid.header__Panel
    div.row
@@ -47,12 +47,16 @@ html(lang='en')
             a(role='menuitem', tabindex='-1', href='#') 
              i(class="fa fa-sign-out", aria-hidden="true") 
              | Salir
-  main.container.panel__Main
+  main.container-fluid.panel__Live
    div.row
-    section.col-md-12.panel__Main--Welcome
-     header.panel__Main--Welcome--Header
-      h2.title
-       | Bienvenido
+    section.col-md-8.panel__Live--Movie
+      <iframe width="100%" height="480" src="https://www.youtube.com/embed/kN3O69Qo5kA" frameborder="0" allowfullscreen></iframe>
+    section.col-md-4.panel__Live--Chat
+      form.form__Live--Chat
+        textarea(name="", cols="30", rows="2", placeholder="Comenta, Pregunta la transmisión en vivo")
+        fieldset.form__Live--Chat--Fieldset
+          input(type="submit", value="Enviar Pregunta")
+
 
 
   

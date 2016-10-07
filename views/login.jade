@@ -38,21 +38,12 @@ html(lang='en')
            input.form-control(type="password", placeholder="Password", name="password")
           fieldset.login--Fieldset
            input(type="submit", value="Empezar Clases")
-      div.col-md-6
 
-  //main.container.viewLogin
-   div.row
-    header.viewLogin__Header
-      h2.title
-        | Bienvenidos a CDT
-   div.row
-    div.col-md-12.viewLogin__Container
-      div.col-md-8
-       form.login(action="acceso", method="post")
-        fieldset.login--Fieldset
-         input(type="email", placeholder="Ingrese email", name="email")
-        fieldset.login--Fieldset
-         input(type="password", placeholder="Password", name="password")
-        fieldset.login--Fieldset
-         input(type="submit", value="Acceder")
+      div.col-md-6.viewRegister__Panel
+        header.viewRegister__Panel--Header
+          h3.title
+            | Eres Nuevo?
+        div.viewRegister__Panel--Continue
+          a.linkContinue(href="#")
+            | Crear Cuenta
   

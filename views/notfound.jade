@@ -1,1 +1,52 @@
-h2 erro
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    title Carreras del Futuro
+    link(href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
+
+    link(rel="stylesheet", href="../stylesheets/bootstrap.min.css")
+    link(rel="stylesheet", href="../stylesheets/bootstrap-theme.css")
+    link(rel="stylesheet", href="../stylesheets/app.css")
+
+    script(src="http://code.jquery.com/jquery-1.9.1.js")
+    script(src="../javascripts/bootstrap.min.js")
+    script(src="../javascripts/code-developer.js")
+    //script(src="javascripts/code-developer2.js")
+    //script(src="javascripts/code-developer3.js")
+ body.uColorWhite
+  header.header.container-fluid
+   div.row
+    section.header__Web.col-xs-8.col-md-10
+     h1.titleHeader
+      | Carrerasdelfuturo
+
+  main.container.viewLogin
+    div.row
+      header.viewLogin__Header.col-md-12
+        h2.title
+          | Ingresar a clases
+    div.row
+      div.col-md-6.viewLogin__Panel
+        form.login(action="acceso", method="post")
+          fieldset.login--Fieldset
+           input.form-control(type="email", placeholder="Ingrese email", name="email")
+          fieldset.login--Fieldset
+           input.form-control(type="password", placeholder="Password", name="password")
+          fieldset.login--Fieldset
+           input(type="submit", value="Empezar Clases")
+      
+  script.
+   $(document).ready(function(){
+    var $input = $(".login input[type='email'], input[type='password']");
+    $($input).css({
+     'background': '#E91E63',
+     'color': 'white'
+    });
+    $(".login input[type='email'], input[type='password']").focus(function(){
+     $(this).css({'background':'#dedede','color':'black'});
+    });
+   });

@@ -1,2 +1,62 @@
-
-<h2>erro</h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Carreras del Futuro</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" href="../stylesheets/app.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/code-developer.js"></script>
+    <!--script(src="javascripts/code-developer2.js")-->
+    <!--script(src="javascripts/code-developer3.js")-->
+  </head>
+</html>
+<body class="uColorWhite">
+  <header class="header container-fluid">
+    <div class="row">
+      <section class="header__Web col-xs-8 col-md-10">
+        <h1 class="titleHeader">Carrerasdelfuturo</h1>
+      </section>
+    </div>
+  </header>
+  <main class="container viewLogin">
+    <div class="row">
+      <header class="viewLogin__Header col-md-12">
+        <h2 class="title">Ingresar a clases</h2>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-md-6 viewLogin__Panel">
+        <form action="acceso" method="post" class="login">
+          <fieldset class="login--Fieldset">
+            <input type="email" placeholder="Ingrese email" name="email" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset">
+            <input type="password" placeholder="Password" name="password" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset">
+            <input type="submit" value="Empezar Clases">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script>
+    $(document).ready(function(){
+     var $input = $(".login input[type='email'], input[type='password']");
+     $($input).css({
+      'background': '#E91E63',
+      'color': 'white'
+     });
+     $(".login input[type='email'], input[type='password']").focus(function(){
+      $(this).css({'background':'#dedede','color':'black'});
+     });
+    });
+  </script>
+</body>

@@ -16,6 +16,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var panel = require('./routes/panel');
 var login = require('./routes/login');
+var envivo = require('./routes/envivo');
 
 var generatePassword = require('password-generator');
 
@@ -77,6 +78,11 @@ app.use('/', routes);
 app.use('/new', users);
 app.use('/login', login);
 app.use('/panel', validate, panel);
+app.use('/envivo', validate, envivo);
+
+app.get('/notfound', function(req, res, next){
+  res.render('notfound');
+});
 
 app.post('/acceso', passport.authenticate('local', {
     successRedirect: '/panel/1',

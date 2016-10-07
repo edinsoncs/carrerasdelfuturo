@@ -7,19 +7,19 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap-theme.css">
-    <link rel="stylesheet" href="stylesheets/app.css">
-    <link rel="stylesheet" href="stylesheets/font.css">
+    <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" href="../stylesheets/app.css">
+    <link rel="stylesheet" href="../stylesheets/font.css">
     <!--Video-->
     <link rel="stylesheet" href="https://vjs.zencdn.net/5.9.2/video-js.css">
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
-    <script src="javascripts/code-developer.js"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/code-developer.js"></script>
     <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-    <script src="javascripts/utils.js"></script>
-    <!--script(src="javascripts/code-developer2.js")-->
-    <!--script(src="javascripts/code-developer3.js")-->
+    <script src="../javascripts/utils.js"></script>
+    <!--script(src="../javascripts/code-developer2.js")-->
+    <!--script(src="../javascripts/code-developer3.js")-->
   </head>
 </html>
 <body class="panelPlatform">
@@ -38,12 +38,16 @@
       </figure>
     </div>
   </header>
-  <main class="container panel__Main">
+  <main class="container-fluid panel__Live">
     <div class="row">
-      <section class="col-md-12 panel__Main--Welcome">
-        <header class="panel__Main--Welcome--Header">
-          <h2 class="title">Bienvenido</h2>
-        </header>
+      <section class="col-md-8 panel__Live--Movie"><iframe width="100%" height="480" src="https://www.youtube.com/embed/kN3O69Qo5kA" frameborder="0" allowfullscreen></iframe></section>
+      <section class="col-md-4 panel__Live--Chat">
+        <form class="form__Live--Chat">
+          <textarea name="" cols="30" rows="2" placeholder="Comenta, Pregunta la transmisión en vivo"></textarea>
+          <fieldset class="form__Live--Chat--Fieldset">
+            <input type="submit" value="Enviar Pregunta">
+          </fieldset>
+        </form>
       </section>
     </div>
   </main>
