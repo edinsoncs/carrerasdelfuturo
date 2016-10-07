@@ -17,29 +17,51 @@
     <!--script(src="javascripts/code-developer3.js")-->
   </head>
 </html>
-<body>
+<body class="uColorWhite">
   <header class="header container-fluid">
     <div class="row">
       <section class="header__Web col-xs-8 col-md-10">
-        <h1 class="title">Carrerasdelfuturo</h1>
+        <h1 class="titleHeader">Carrerasdelfuturo</h1>
       </section>
     </div>
   </header>
   <main class="container viewLogin">
     <div class="row">
-      <div class="col-md-8">
+      <header class="viewLogin__Header col-md-12">
+        <h2 class="title">Ingresar a clases</h2>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-md-6 viewLogin__Panel">
         <form action="acceso" method="post" class="login">
           <fieldset class="login--Fieldset">
-            <input type="email" placeholder="Ingrese email" name="email">
+            <input type="email" placeholder="Ingrese email" name="email" class="form-control">
           </fieldset>
           <fieldset class="login--Fieldset">
-            <input type="password" placeholder="Password" name="password">
+            <input type="password" placeholder="Password" name="password" class="form-control">
           </fieldset>
           <fieldset class="login--Fieldset">
-            <input type="submit" value="Acceder">
+            <input type="submit" value="Empezar Clases">
           </fieldset>
         </form>
       </div>
+      <div class="col-md-6"></div>
     </div>
   </main>
+  <!--main.container.viewLogin
+  div.row
+   header.viewLogin__Header
+     h2.title
+       | Bienvenidos a CDT
+  div.row
+   div.col-md-12.viewLogin__Container
+     div.col-md-8
+      form.login(action="acceso", method="post")
+       fieldset.login--Fieldset
+        input(type="email", placeholder="Ingrese email", name="email")
+       fieldset.login--Fieldset
+        input(type="password", placeholder="Password", name="password")
+       fieldset.login--Fieldset
+        input(type="submit", value="Acceder")
+  -->
 </body>

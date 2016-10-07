@@ -7,6 +7,9 @@ h5,
 h6 {
   margin: 0;
 }
+.uColorWhite {
+  background: #fff;
+}
 .none {
   display: none;
 }
@@ -399,37 +402,41 @@ body {
   text-decoration: none;
 }
 .viewLogin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -2%;
-  margin-left: -15%;
-  width: 50%;
+  padding-top: 8em;
 }
-.viewLogin .login {
-  background-color: #fff;
-  padding: 1em;
-}
-.viewLogin .login .login--Fieldset input[type='email'],
-.viewLogin .login .login--Fieldset input[type='password'] {
-  width: 100%;
-  padding: 0.5em;
-  border: none;
-  margin: 0 0 0.5em 0;
-  border: 1px solid #dedede;
-  border-radius: 4px;
-  outline: none;
-}
-.viewLogin .login .login--Fieldset input[type='submit'] {
-  background-color: #2196f3;
-  color: #fff;
-  outline: none;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  border: none;
-}
-.viewLogin .login .login--Fieldset:last-child {
+.viewLogin .viewLogin__Header {
   text-align: center;
+}
+.viewLogin .viewLogin__Header .title {
+  font-family: 'Oswald', sans-serif;
+}
+.viewLogin .viewLogin__Panel {
+  float: none;
+  margin: 0 auto;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  margin-top: 2em;
+  border: 2px solid #eeba55;
+  border-radius: 7px;
+}
+.viewLogin .viewLogin__Panel input[type='email'],
+.viewLogin .viewLogin__Panel input[type='password'] {
+  margin-bottom: 1em;
+  height: 50px;
+  background: #dedede;
+}
+.viewLogin .viewLogin__Panel .login--Fieldset:last-child {
+  text-align: center;
+}
+.viewLogin .viewLogin__Panel .login--Fieldset:last-child input {
+  padding: 1em 1.2em;
+  border: none;
+  background: #2bc66d;
+  color: #fff;
+  border-radius: 5px;
+  outline: medium none;
+  box-shadow: 0 4px 0 #066e32;
+  font-size: 1em;
 }
 .successUser {
   position: fixed;

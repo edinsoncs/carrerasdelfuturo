@@ -17,21 +17,42 @@ html(lang='en')
     script(src="../javascripts/code-developer.js")
     //script(src="javascripts/code-developer2.js")
     //script(src="javascripts/code-developer3.js")
- body
+ body.uColorWhite
   header.header.container-fluid
    div.row
     section.header__Web.col-xs-8.col-md-10
-     h1.title
+     h1.titleHeader
       | Carrerasdelfuturo
 
   main.container.viewLogin
+    div.row
+      header.viewLogin__Header.col-md-12
+        h2.title
+          | Ingresar a clases
+    div.row
+      div.col-md-6.viewLogin__Panel
+        form.login(action="acceso", method="post")
+          fieldset.login--Fieldset
+           input.form-control(type="email", placeholder="Ingrese email", name="email")
+          fieldset.login--Fieldset
+           input.form-control(type="password", placeholder="Password", name="password")
+          fieldset.login--Fieldset
+           input(type="submit", value="Empezar Clases")
+      div.col-md-6
+
+  //main.container.viewLogin
    div.row
-    div.col-md-8
-     form.login(action="acceso", method="post")
-      fieldset.login--Fieldset
-       input(type="email", placeholder="Ingrese email", name="email")
-      fieldset.login--Fieldset
-       input(type="password", placeholder="Password", name="password")
-      fieldset.login--Fieldset
-       input(type="submit", value="Acceder")
+    header.viewLogin__Header
+      h2.title
+        | Bienvenidos a CDT
+   div.row
+    div.col-md-12.viewLogin__Container
+      div.col-md-8
+       form.login(action="acceso", method="post")
+        fieldset.login--Fieldset
+         input(type="email", placeholder="Ingrese email", name="email")
+        fieldset.login--Fieldset
+         input(type="password", placeholder="Password", name="password")
+        fieldset.login--Fieldset
+         input(type="submit", value="Acceder")
   

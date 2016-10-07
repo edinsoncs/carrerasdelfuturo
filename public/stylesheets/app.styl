@@ -3,6 +3,8 @@ body, h1, h2, h3, h4, h5, h6
 
 //Colors
 $blanco = white	
+.uColorWhite
+	background white
 .none
 	display none
 
@@ -343,34 +345,37 @@ body
 					text-decoration none
 
 .viewLogin
-	position absolute
-	top 50%
-	left 50%
-	margin-top -2%
-	margin-left -15%
-	width 50%
-	.login
-		background-color white
-		padding 1em
-		.login--Fieldset
-			input[type='email'], input[type='password']
-				width 100%
-				padding 0.5em
+	padding-top 8em
+	.viewLogin__Header
+		text-align center
+		.title
+			font-family 'Oswald', sans-serif
+	.viewLogin__Panel
+		//background red
+		float none
+		margin 0 auto
+		padding-top 3em
+		padding-bottom 2em
+		margin-top 2em
+		border 2px solid #eeba55
+		border-radius 7px
+		input[type='email'], input[type='password']
+			margin-bottom 1em
+			height 50px
+			background #dedede
+		.login--Fieldset:last-child
+			text-align center
+			input
+				padding 1em 1.2em
 				border none
-				margin 0 0 0.5em 0
-				border 1px solid #dedede
-				border-radius 4px
-				outline none
-			input[type='submit']
-				background-color #2196F3
+				background #2bc66d
 				color white
-				outline none
-				padding 0.5em 1em
-				border-radius 4px
-				border none
-			
-			&:last-child
-				text-align center		
+				border-radius 5px
+				outline medium none
+				box-shadow 0 4px 0 #066e32
+				
+				font-size 1em
+				
 .successUser 
 	position fixed
 	z-index 2999

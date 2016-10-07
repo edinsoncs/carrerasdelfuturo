@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongodb = require('mongodb');
+var flash = require('req-flash');
+
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 
@@ -21,23 +23,24 @@ var mongoose = require('mongoose');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/carreras', function(err, res){
-  if(err){
-    return err;
-  } else {
-    console.log('conectado');
-  }
+mongoose.connect('mongodb://localhost:27017/carreras', function(err, res) {
+    if (err) {
+        return err;
+    } else {
+        console.log('conectado');
+    }
 });
 
 /*Cookies Login passport local*/
-app.use(expressSession({ 
-  secret: 'ilovescotchscotchyscotchscotch',  
-  resave: false, 
-  saveUninitialized: true, 
-  cookie:{
-     maxAge : 3600000 // one hour in millis
-   }
- }));
+app.use(expressSession({
+    secret: 'ilovescotchscotchyscotchscotch',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {
+        maxAge: 3600000 // one hour in millis
+    }
+}));
+app.use(flash());
 /*End Cookies*/
 
 require('./models/modeluser');
@@ -62,30 +65,29 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-function validate(req, res, next){
-  if(req.isAuthenticated()) {
-    return next();
-  } else 
-  {
-    res.redirect('/login');
-  }
+function validate(req, res, next) {
+    if (req.isAuthenticated()) {
+        return next();
+    } else {
+        res.redirect('/login');
+    }
 }
 
 app.use('/', routes);
 app.use('/new', users);
 app.use('/login', login);
-app.use('/panel',validate, panel);
+app.use('/panel', validate, panel);
 
 app.post('/acceso', passport.authenticate('local', {
-  successRedirect: '/panel/1',
-  failureRedirect: '/notfound'
+    successRedirect: '/panel/1',
+    failureRedirect: '/notfound'
 }));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+    var err = new Error('Not Found');
+    err.status = 404;
+    next(err);
 });
 
 // error handlers
@@ -93,23 +95,23 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
     });
-  });
 }
 
 // production error handler
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: {}
-  });
+    res.status(err.status || 500);
+    res.render('error', {
+        message: err.message,
+        error: {}
+    });
 });
 
 
