@@ -5,7 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongodb = require('mongodb');
-var flash = require('req-flash');
+
+var flash = require('express-flash');
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
@@ -17,6 +18,7 @@ var users = require('./routes/users');
 var panel = require('./routes/panel');
 var login = require('./routes/login');
 var envivo = require('./routes/envivo');
+var register = require('./routes/register');
 
 var generatePassword = require('password-generator');
 
@@ -42,6 +44,7 @@ app.use(expressSession({
     }
 }));
 app.use(flash());
+
 /*End Cookies*/
 
 require('./models/modeluser');
@@ -79,15 +82,21 @@ app.use('/new', users);
 app.use('/login', login);
 app.use('/panel', validate, panel);
 app.use('/envivo', validate, envivo);
+app.use('/register', register);
 
 app.get('/notfound', function(req, res, next){
   res.render('notfound');
 });
 
 app.post('/acceso', passport.authenticate('local', {
-    successRedirect: '/panel/1',
+    successRedirect: '/panel',
     failureRedirect: '/notfound'
 }));
+
+app.get('/exit', function(req, res, next){
+    req.logout();
+    res.redirect('/');    
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

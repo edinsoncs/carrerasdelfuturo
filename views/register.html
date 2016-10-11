@@ -28,28 +28,37 @@
   <main class="container viewLogin">
     <div class="row">
       <header class="viewLogin__Header col-md-12">
-        <h2 class="title">Ingresar a clases</h2>
+        <h2 class="title">Registrarme una cuenta</h2>
       </header>
     </div>
     <div class="row">
       <div class="col-md-6 viewLogin__Panel">
-        <form action="acceso" method="post" class="login">
-          <fieldset class="login--Fieldset">
-            <input type="email" placeholder="Ingrese email" name="email" class="form-control">
+        <form action="/register/save" method="post" class="login">
+          <fieldset class="login--Fieldset col-md-6">
+            <input type="text" placeholder="Nombre de usuario" name="usuario" class="form-control">
           </fieldset>
-          <fieldset class="login--Fieldset">
-            <input type="password" placeholder="Password" name="password" class="form-control">
+          <fieldset class="login--Fieldset col-md-6">
+            <input type="text" placeholder="Nombre y Apellidos" name="namefull" class="form-control">
           </fieldset>
-          <fieldset class="login--Fieldset">
+          <fieldset class="login--Fieldset col-md-12">
+            <input type="email" placeholder="Email" name="email" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset col-md-6">
+            <input type="password" placeholder="Passsword" name="password" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset col-md-6">
+            <input type="password" placeholder="Confirmar Password" name="passwordConfirm" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset col-md-12">
             <input type="submit" value="Empezar Clases">
           </fieldset>
         </form>
       </div>
       <div class="col-md-6 viewRegister__Panel">
         <header class="viewRegister__Panel--Header">
-          <h3 class="title">Eres Nuevo?</h3>
+          <h3 class="title">Ya tienes una cuenta?</h3>
         </header>
-        <div class="viewRegister__Panel--Continue"><a href="register" class="linkContinue">Crear Cuenta</a></div>
+        <div class="viewRegister__Panel--Continue"><a href="login" class="linkContinue">Ingresar</a></div>
       </div>
     </div>
   </main>
