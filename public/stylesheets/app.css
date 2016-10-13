@@ -73,7 +73,8 @@ body {
 .header__Panel .header__User .dropdown-menu li a i {
   margin-right: 0.5em;
 }
-.header__Panel .header__User .dropdown-menu li a:hover {
+.header__Panel .header__User .dropdown-menu li a:hover,
+.header__Panel .header__User .dropdown-menu li a:active {
   background: #20b35d;
 }
 .header {
@@ -210,6 +211,185 @@ body {
   50% {
     opacity: 0.5;
   }
+}
+.profileView {
+  background-color: #fff;
+  padding-top: 6em;
+  padding-bottom: 2em;
+}
+.profileView .profileView--Figure {
+  margin: 0;
+  border-right: 1px solid #dedede;
+  padding-right: 1em;
+  height: 137px;
+  position: relative;
+}
+.profileView .profileView--Figure img {
+  display: block;
+  width: 100px;
+  height: 92px;
+  border-radius: 50%;
+  margin-top: 1.5em;
+}
+.profileView .profileView--Details {
+  margin-left: 2em;
+  position: relative;
+}
+.profileView .profileView--Details .profileView--Details--Header .title {
+  color: #646464 !important;
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: 'Roboto';
+}
+.profileView .profileView--Details .profileView--Details--Header .nickname .title {
+  font-size: 16px;
+  color: #dedede;
+  margin-top: 0.5em;
+  font-family: 'Roboto';
+}
+.profileView .profileView--Details .profileView--Details--Header .utils {
+  padding-top: 1em;
+}
+.profileView .profileView--Details .profileView--Details--Header span {
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+}
+.profileView .profileView--Details .profileView--Details--Header span:first-child {
+  color: #20b35d;
+}
+.profileView .profileView--Details .profileView--Details--Header span:first-child b {
+  color: #20b35d;
+}
+.profileView .profileView--Details .profileView--Details--Header span b {
+  display: block;
+  font-size: 1.3rem;
+}
+.profileView .profileView--Details .profileView--Edit--Container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: -1em;
+}
+.profileView .profileView--Details .profileView--Edit--Container .linkEdit {
+  background: #0a8ecd;
+  padding: 0.8em;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Roboto';
+  display: block;
+  transition: all 0.5s linear;
+}
+.profileView .profileView--Details .profileView--Edit--Container .linkEdit:hover,
+.profileView .profileView--Details .profileView--Edit--Container .linkEdit:active {
+  text-decoration: none;
+}
+.profileView .profileView--Details .profileView--Edit--Container .linkEdit:nth-child(2) {
+  margin-top: 1em;
+  background: #f44336 !important;
+  border: none;
+  outline: none;
+}
+.profileViewMain {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.profileViewMain .cours__Header {
+  padding-bottom: 1em;
+  padding-left: 0;
+  font-family: 'Roboto';
+}
+.profileViewMain .cours__Header .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.profileViewMain .cours__Header .show {
+  line-height: 16px;
+}
+.profileViewMain .cours__Header .cours__Continue .linkContinue {
+  display: block;
+  margin-top: 1em;
+  background-color: #4caf50;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  border-radius: 4px;
+  color: #fff !important;
+  font-family: 'Roboto';
+  box-shadow: 0 4px 0 #236426;
+}
+.profileViewMain .cours__Header .cours__Continue .linkContinue:active {
+  transform: scale(1.1, 1.1);
+}
+.profileViewMain .cours {
+  background-color: #ecf7fb;
+  border: 1px solid #0791e6;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  border-radius: 4px;
+  width: 30%;
+  margin: 0 1em;
+}
+.profileViewMain .cours .title {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.successAvatar {
+  animation: profile 1s;
+}
+@-moz-keyframes profile {
+  20% {
+    box-shadow: 0 0 10px #0a8ecd;
+    background: #0a8ecd !important;
+  }
+  50% {
+    box-shadow: 0 0 30px #0a8ecd;
+  }
+}
+@-webkit-keyframes profile {
+  20% {
+    box-shadow: 0 0 10px #0a8ecd;
+    background: #0a8ecd !important;
+  }
+  50% {
+    box-shadow: 0 0 30px #0a8ecd;
+  }
+}
+@-o-keyframes profile {
+  20% {
+    box-shadow: 0 0 10px #0a8ecd;
+    background: #0a8ecd !important;
+  }
+  50% {
+    box-shadow: 0 0 30px #0a8ecd;
+  }
+}
+@keyframes profile {
+  20% {
+    box-shadow: 0 0 10px #0a8ecd;
+    background: #0a8ecd !important;
+  }
+  50% {
+    box-shadow: 0 0 30px #0a8ecd;
+  }
+}
+.changeIMG {
+  background: rgba(0,0,0,0.51);
+  position: absolute;
+  top: 15%;
+  width: 100px;
+  height: 92px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 2em;
+}
+.changeIMG label {
+  color: #fff;
+  font-size: 13px;
 }
 .subHeader {
   background-color: #000;

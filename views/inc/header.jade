@@ -1,0 +1,22 @@
+header.header.container-fluid.header__Panel
+   div.row
+    section.header__Web.col-xs-8.col-md-11
+     h1.titleHeader
+      | Carrerasdelfuturo
+    figure.header__User.col-md-1.dropdown(data-toggle='dropdown')
+      img(src="/images/avatar.png", width="40px")
+      div.header__User--Icon(data-toggle='dropdown')
+          i(class="fa fa-angle-down", aria-hidden="true")
+        ul.dropdown-menu
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', onclick="window.location.href = '/panel/profile'; ") 
+             i(class="fa fa-user", aria-hidden="true")
+             | Mi Perfil
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') 
+             i(class="fa fa-graduation-cap", aria-hidden="true")
+             | Certificados
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', onclick="function exit(){ window.location.href = '/exit'  } exit();") 
+             i(class="fa fa-sign-out", aria-hidden="true") 
+             | Salir

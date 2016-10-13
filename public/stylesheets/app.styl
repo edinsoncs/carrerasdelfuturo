@@ -61,7 +61,7 @@ body
 					color white
 					i 
 						margin-right .5em
-					&:hover
+					&:hover, &:active
 						background #20b35d
 .header
 	background-color #2c3e50
@@ -172,8 +172,134 @@ body
 				@keyframes homePerson
 					50% 
 						opacity 0.5
-	
 
+.profileView
+	background-color white
+	padding-top 6em
+	padding-bottom 2em
+	.profileView--Figure 
+		margin 0
+		border-right 1px solid #dedede
+		padding-right 1em
+		height 137px
+		position relative
+		img 
+			display block
+			width 100px
+			height 92px
+			border-radius 50%
+			margin-top 1.5em
+	.profileView--Details
+		margin-left 2em
+		position relative
+		.profileView--Details--Header .title
+			color #646464 !important
+			font-size 22px
+			text-transform capitalize
+			font-family 'Roboto'
+		.profileView--Details--Header
+			.nickname .title
+				font-size 16px
+				color #dedede
+				margin-top 0.5em
+				font-family 'Roboto'
+			.utils
+				padding-top 1em
+			span
+				display block
+				text-align center
+				font-size 2.5em
+				&:first-child
+					color #20b35d
+					b
+						color #20b35d
+				b
+					display block
+					font-size 1.3rem
+
+		.profileView--Edit--Container
+			position absolute
+			right 0
+			top 0
+			margin-top -1em
+			.linkEdit
+				background #0a8ecd
+				padding 0.8em
+				border-radius 4px
+				color white
+				cursor pointer
+				font-family 'Roboto'
+				display block
+				transition all 0.5s linear
+				&:hover, &:active
+					text-decoration none
+				&:nth-child(2)
+					margin-top 1em
+					background #F44336 !important
+					border none
+					outline none 	
+.profileViewMain
+	padding-top 2em
+	padding-bottom 2em
+	.cours__Header
+		padding-bottom 1em
+		padding-left 0 
+		font-family 'Roboto'
+		.title
+			font-size 24px
+			font-weight 700
+		.show
+			line-height 16px
+		.cours__Continue
+			.linkContinue
+				display block
+				margin-top 1em
+				background-color #4CAF50
+				float none
+				margin-left auto
+				margin-right auto
+				padding-top 0.8em
+				padding-bottom 0.8em
+				border-radius 4px
+				color white!important
+				font-family 'Roboto'
+				box-shadow 0 4px 0 #236426
+				&:active
+					transform: scale(1.1, 1.1)
+
+	.cours
+		background-color #ecf7fb
+		border 1px solid #0791e6
+		padding-top 1em
+		padding-bottom 1em
+		text-align center
+		border-radius 4px
+		width: 30%;
+		margin: 0 1em
+		.title
+			margin-top 0.5em
+			margin-bottom 0.5em
+
+.successAvatar
+	animation profile 1s
+	@keyframes profile
+		20%
+			box-shadow 0 0 10px #0a8ecd
+			background #0a8ecd !important
+		50% 
+			box-shadow 0 0 30px #0a8ecd
+.changeIMG
+	background rgba(0, 0, 0, 0.51)
+	position absolute
+	top 15%
+	width 100px
+	height 92px
+	border-radius 50%
+	text-align center
+	padding-top 2em
+	label
+		color white
+		font-size 13px
 .subHeader
 	background-color black
 	background-image url('../images/bg.jpg')
@@ -565,8 +691,6 @@ body
 		margin-bottom 2em
 		.panel__Main--Welcome--Cours
 			box-shadow 0 9px 14px #b6b5b5
-			
-			
 			.cA1 
 				background #058ecd
 			.cA2 

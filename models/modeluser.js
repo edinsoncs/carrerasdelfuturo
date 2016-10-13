@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 var usuario = new Schema({
 	nickname: String,
+	avatar: String,
 	namecomplet: String,
 	email: String,
 	password: String,

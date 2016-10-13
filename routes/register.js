@@ -5,6 +5,7 @@ var Schema = mongoose.Schema;
 var User = require('../models/modeluser');
 
 
+
 router.get('/', function(req, res, next) {
 
 	res.render('register', {

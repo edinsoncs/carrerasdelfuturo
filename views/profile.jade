@@ -1,0 +1,96 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    title Carreras del Futuro
+    link(href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
+
+    link(rel="stylesheet", href="/stylesheets/bootstrap.min.css")
+    link(rel="stylesheet", href="/stylesheets/bootstrap-theme.css")
+    link(rel="stylesheet", href="/stylesheets/app.css")
+    link(rel="stylesheet", href="/stylesheets/font.css")
+
+    //Video
+    link(rel="stylesheet", href="https://vjs.zencdn.net/5.9.2/video-js.css")
+
+
+    script(src="http://code.jquery.com/jquery-1.9.1.js")
+    script(src="/javascripts/bootstrap.min.js")
+    script(src="/javascripts/code-developer.js")
+    script(src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js")
+    script(src="/javascripts/utils.js")
+    //script(src="javascripts/code-developer2.js")
+    //script(src="javascripts/code-developer3.js")
+  body.panelPlatform
+    include inc/header
+    section.container-fluid.profileView
+      div.container
+       form.editProfileForm(action="/panel/saveprofile", method="POST")
+        div.row
+          figure.profileView--Figure.col-md-2
+            img.jsImage(src="/images/avatar.png", alt="#{user.nickname}")
+          aside.profileView--Details.col-md-9
+            header.profileView--Details--Header
+              h2.title.jsName
+                | #{user.namecomplet}
+              div.nickname.jsNickname
+               h3.title
+                | #{user.nickname}
+              div.utils.col-md-12
+                span.utilsPreguntas.col-md-4
+                  | 0
+                  b.utilsPreguntasName
+                    | Preguntas
+                span.utilsAportes.col-md-4
+                  | 0
+                  b.utilsAportesName
+                    | Aportes
+                span.utilsRespuestas.col-md-4
+                  | 0
+                  b.utilsRespuestasName
+                    | Respuestas
+            div.profileView--Edit--Container
+              a.linkEdit
+                | Editar Mi Perfil
+    main.profileViewMain.container
+      div.row
+        header.cours__Header.col-md-12
+          h2.title
+            | Tus carreras
+        article.cours.col-md-4
+          figure.cours__Figure
+            img(src="https://static.platzi.com/media/achievements/golden_frontend2x.png", width="80px")
+          header.cours__Header
+            h2.title
+              | Negocios
+            span.show
+              | Carrera de negocios en internet, aprende esto y lo mejor de la carrera
+            div.cours__Continue
+              a.linkContinue.col-md-6(href="#")
+                | Continuar
+        article.cours.col-md-4
+          figure.cours__Figure
+            img(src="https://static.platzi.com/media/achievements/golden_frontend2x.png", width="80px")
+          header.cours__Header
+            h2.title
+              | Negocios
+            span.show
+              | Carrera de negocios en internet, aprende esto y lo mejor de la carrera
+            div.cours__Continue
+              a.linkContinue.col-md-6(href="#")
+                | Continuar
+        article.cours.col-md-4
+          figure.cours__Figure
+            img(src="https://static.platzi.com/media/achievements/golden_frontend2x.png", width="80px")
+          header.cours__Header
+            h2.title
+              | Negocios
+            span.show
+              | Carrera de negocios en internet, aprende esto y lo mejor de la carrera
+            div.cours__Continue
+              a.linkContinue.col-md-6(href="#")
+                | Continuar
+

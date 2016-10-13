@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 var mongodb = require('mongodb');
 
 var flash = require('express-flash');
+var monk = require('monk');
+var db = monk('localhost:27017/carreras');
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
@@ -32,6 +34,11 @@ mongoose.connect('mongodb://localhost:27017/carreras', function(err, res) {
     } else {
         console.log('conectado');
     }
+});
+
+app.use(function(req, res, next) {
+    req.db = db;
+    next();
 });
 
 /*Cookies Login passport local*/
@@ -84,8 +91,8 @@ app.use('/panel', validate, panel);
 app.use('/envivo', validate, envivo);
 app.use('/register', register);
 
-app.get('/notfound', function(req, res, next){
-  res.render('notfound');
+app.get('/notfound', function(req, res, next) {
+    res.render('notfound');
 });
 
 app.post('/acceso', passport.authenticate('local', {
@@ -93,9 +100,9 @@ app.post('/acceso', passport.authenticate('local', {
     failureRedirect: '/notfound'
 }));
 
-app.get('/exit', function(req, res, next){
+app.get('/exit', function(req, res, next) {
     req.logout();
-    res.redirect('/');    
+    res.redirect('/');
 });
 
 // catch 404 and forward to error handler

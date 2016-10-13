@@ -36,7 +36,7 @@ html(lang='en')
           i(class="fa fa-angle-down", aria-hidden="true")
         ul.dropdown-menu
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') 
+            a(role='menuitem', tabindex='-1', onclick="window.location.href = '/panel/profile'; ") 
              i(class="fa fa-user", aria-hidden="true")
              | Mi Perfil
           li(role='presentation')
@@ -44,7 +44,7 @@ html(lang='en')
              i(class="fa fa-graduation-cap", aria-hidden="true")
              | Certificados
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='/exit') 
+            a(role='menuitem', tabindex='-1', onclick="function exit(){ window.location.href = '/exit'  } exit();") 
              i(class="fa fa-sign-out", aria-hidden="true") 
              | Salir
   main.container.panel__Main
