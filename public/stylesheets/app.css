@@ -324,6 +324,16 @@ body {
 .profileViewMain .cours__Header .cours__Continue .linkContinue:active {
   transform: scale(1.1, 1.1);
 }
+.profileViewMain .cours__Aleatorio {
+  padding-left: 0;
+  padding-right: 0;
+}
+.profileViewMain .cours__Aleatorio .linkcours__Aleatorio--Link {
+  background-color: #5c8512;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #fff;
+}
 .profileViewMain .cours {
   background-color: #ecf7fb;
   border: 1px solid #0791e6;
@@ -923,13 +933,18 @@ body {
   padding-right: 0;
 }
 .panel__Live .panel__Live--Chat {
-  background-color: #fff;
+  background-color: #f6f6f6;
   position: fixed;
   right: 0;
   bottom: 0;
   top: 0;
   padding-top: 5em;
   border-left: 5px solid #2980b9;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat {
+  margin-bottom: 2em;
 }
 .panel__Live .panel__Live--Chat .form__Live--Chat textarea {
   width: 100%;
@@ -950,6 +965,56 @@ body {
   border-radius: 4px;
   outline: none;
   box-shadow: 0 4px 0 #1a72b7;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  border: 1px solid #dedede;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream:hover {
+  border: 1px solid #2196f3;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream:active {
+  transform: scale(0.9, 0.9);
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream .Stream__Figure img {
+  border-radius: 50%;
+  height: 45px;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream .Stream__Figure--Name {
+  display: block;
+  text-align: center;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream .Stream__Detalles {
+  width: 89%;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream .Stream__Detalles .Stream__Detalles--Header {
+  text-align: right;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream .Stream__Detalles .Stream__Detalles--Header span {
+  font-size: 0.8em;
+  color: #787676;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream .Stream__Detalles .Stream__Detalles--Header .Separed {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream .Stream__Detalles .Stream__Detalles--Show {
+  text-align: left;
+}
+.panel__Live .panel__Live--Chat .form__Live--Chat--Stream .Stream .Stream__Detalles .Stream__Detalles--Show .description {
+  font-size: 0.9em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: #2196f3;
 }
 .bottomFooter {
   background-color: #2c3e50;

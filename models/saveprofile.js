@@ -6,24 +6,82 @@ var bodyParser = require('body-parser');
 
 
 
-module.exports = (req, res, next) => {
+module.exports = (req, res, next, img) => {
 
-	var db = req.db;
-	var usuario = db.get('users');
+    var db = req.db;
+    var usuario = db.get('users');
+
+    switch (req.body.toaccess) {
+        case 'pdoxlurjhgf':
+
+        	function verify(body, toFile) {
+        		console.log(toFile.avatar.name.length);
+        		
+        		if(toFile.avatar.name.length > 0 ) {
+        			
+        			profileAvatar('avatar');
+
+        		} else {
+        			
+        			profileAvatar('text');        		
+        		}
+
+        	}
+
+			verify(req.body, img);        		
 
 
-	switch(req.body.toaccess) {
-		case 'pdoxlurjhgf':
+			function profileAvatar(type) {
+				if(type == 'avatar') {
+		            fs.readFile(img.avatar.path, (err, data) => {
+		                if (err) {
+		                    return err;
+		                } else {
+		                    var name = shortid() + img.avatar.name;
+		                    var save_avatar = path.join(__dirname, '..', 'public', 'users/' + name);
 
-			  console.log(req.files);
-			  console.log(req.file);
+		                    fs.writeFile(save_avatar, data, (err) => {
 
-			break;
-		default:
+		                        usuario.update({ _id: req.user._id }, {
+		                            $set: {
+		                                'avatar': name,
+		                                'namecomplet': req.body.isname0,
+		                                'nickname': req.body.isname1
 
-			console.log('Esta mal');
-	
-	}
+		                            }
+		                        }, (err, great) => {
+		                            res.redirect('/panel/profile');
+		                        });
+
+
+		                    });
+		                }
+		            });
+				} else {
+					usuario.update({_id: req.user._id}, {
+						$set: {
+							'namecomplet': req.body.isname0,
+							'nickname': req.body.isname1
+						}
+					}, (err, great) => {
+						if(err) {
+							return err;
+						} else {
+							res.redirect('/panel/profile');
+						}
+					});
+				}
+
+			}
+
+
+
+            break;
+        default:
+
+            console.log('Esta mal');
+
+    }
 
 
 

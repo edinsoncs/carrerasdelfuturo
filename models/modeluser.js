@@ -9,7 +9,8 @@ var usuario = new Schema({
 	password: String,
 	payment: Array,
 	ip: Number,
-	cursos: Array
+	cursos: Array,
+	admin: Boolean
 });
 
 var User = mongoose.model('User', usuario);

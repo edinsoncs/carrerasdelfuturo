@@ -266,6 +266,17 @@ body
 				box-shadow 0 4px 0 #236426
 				&:active
 					transform: scale(1.1, 1.1)
+	
+	.cours__Aleatorio {
+		padding-left: 0;
+		padding-right: 0;
+		.linkcours__Aleatorio--Link {
+			background-color: #5c8512;
+			padding: 0.5em;
+			text-decoration: none;
+			color: white;
+		}
+	}
 
 	.cours
 		background-color #ecf7fb
@@ -749,14 +760,17 @@ body
 		padding-left 0
 		padding-right 0
 	.panel__Live--Chat
-		background-color white
+		background-color #f6f6f6
 		position fixed
 		right 0
 		bottom 0
 		top 0
 		padding-top 5em
 		border-left 5px solid #2980b9
+		overflow-y scroll
+		overflow-x hidden
 		.form__Live--Chat
+			margin-bottom 2em
 			textarea
 				width 100%
 				resize none
@@ -774,6 +788,46 @@ body
 					border-radius 4px
 					outline none
 					box-shadow 0 4px 0 #1a72b7
+		.form__Live--Chat--Stream
+			.Stream
+				display flex
+				justify-content space-between
+				background-color #fff
+				padding 0.5em
+				margin-top 1em
+				margin-bottom 1em
+				border-radius 4px
+				border 1px solid #dedede
+				cursor pointer
+				transition all 0.5s linear
+				&:hover 
+					border 1px solid #2196f3
+				&:active
+					transform scale(0.9, 0.9)
+				.Stream__Figure img 
+					border-radius 50%
+					height 45px
+				.Stream__Figure--Name
+					display block
+					text-align center
+				.Stream__Detalles
+					width: 89%
+					.Stream__Detalles--Header
+						text-align right
+						span 
+							font-size 0.8em
+							color #787676
+						.Separed
+							margin-right 0.5em
+							margin-left 0.5em
+					.Stream__Detalles--Show 
+						text-align left
+					.Stream__Detalles--Show .description 
+						font-size 0.9em
+						margin-left 0.5em
+						margin-right 0.5em
+						font-weight 700
+						color #2196f3
 .bottomFooter
 	background-color #2c3e50
 	height 200px

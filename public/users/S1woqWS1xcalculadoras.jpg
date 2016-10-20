@@ -1,0 +1,10 @@
+(err) => {
+
+			 			usuario.update({_id: req.user._id}, {
+			 				'avatar': 'hola.jpg'
+			 			}, (err, great) => {
+			 				console.log('funciono');
+			 			});
+
+
+			 		}
