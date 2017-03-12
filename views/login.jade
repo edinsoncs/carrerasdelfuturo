@@ -30,6 +30,9 @@ html(lang='en')
         h2.title
           | Ingresar a clases
     div.row
+      div.viewLogin__Show.col-md-12
+         if messages.info
+           h2.title #{messages.info}
       div.col-md-6.viewLogin__Panel
         form.login(action="acceso", method="post")
           fieldset.login--Fieldset
@@ -44,6 +47,6 @@ html(lang='en')
           h3.title
             | Eres Nuevo?
         div.viewRegister__Panel--Continue
-          a.linkContinue(href="#")
+          a.linkContinue(href="register")
             | Crear Cuenta
   

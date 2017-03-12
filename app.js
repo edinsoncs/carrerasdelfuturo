@@ -5,7 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongodb = require('mongodb');
-var flash = require('req-flash');
+
+var flash = require('express-flash');
+var monk = require('monk');
+var db = monk('localhost:27017/carreras');
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
@@ -16,7 +19,11 @@ var users = require('./routes/users');
 var panel = require('./routes/panel');
 var login = require('./routes/login');
 var envivo = require('./routes/envivo');
+
 var curso = require('./routes/cursos');
+
+var register = require('./routes/register');
+
 
 var generatePassword = require('password-generator');
 
@@ -32,6 +39,11 @@ mongoose.connect('mongodb://localhost:27017/carreras', function(err, res) {
     }
 });
 
+app.use(function(req, res, next) {
+    req.db = db;
+    next();
+});
+
 /*Cookies Login passport local*/
 app.use(expressSession({
     secret: 'ilovescotchscotchyscotchscotch',
@@ -42,6 +54,7 @@ app.use(expressSession({
     }
 }));
 app.use(flash());
+
 /*End Cookies*/
 
 require('./models/modeluser');
@@ -82,16 +95,22 @@ app.use('/curso', curso);
 
 app.use('/panel', validate, panel);
 app.use('/envivo', validate, envivo);
+app.use('/register', register);
 
 
-app.get('/notfound', function(req, res, next){
-  res.render('notfound');
+app.get('/notfound', function(req, res, next) {
+    res.render('notfound');
 });
 
 app.post('/acceso', passport.authenticate('local', {
-    successRedirect: '/panel/1',
+    successRedirect: '/panel',
     failureRedirect: '/notfound'
 }));
+
+app.get('/exit', function(req, res, next) {
+    req.logout();
+    res.redirect('/');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

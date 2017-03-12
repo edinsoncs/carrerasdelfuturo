@@ -25,37 +25,123 @@ html(lang='en')
     //script(src="../javascripts/code-developer2.js")
     //script(src="../javascripts/code-developer3.js")
  body.panelPlatform
-  header.header.container-fluid.header__Panel
-   div.row
-    section.header__Web.col-xs-8.col-md-11
-     h1.titleHeader
-      | Carrerasdelfuturo
-    figure.header__User.col-md-1.dropdown(data-toggle='dropdown')
-      img(src="https://static.platzi.com/media/public/uploads/xd-64a93a6a-f2f1-48d6-853c-5f516c8df743.jpg", width="40px")
-      div.header__User--Icon(data-toggle='dropdown')
-          i(class="fa fa-angle-down", aria-hidden="true")
-        ul.dropdown-menu
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') 
-             i(class="fa fa-user", aria-hidden="true")
-             | Mi Perfil
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') 
-             i(class="fa fa-graduation-cap", aria-hidden="true")
-             | Certificados
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') 
-             i(class="fa fa-sign-out", aria-hidden="true") 
-             | Salir
+  include inc/header
   main.container-fluid.panel__Live
    div.row
     section.col-md-8.panel__Live--Movie
-      <iframe width="100%" height="480" src="https://www.youtube.com/embed/kN3O69Qo5kA" frameborder="0" allowfullscreen></iframe>
+      video(autoplay, loop, width="100%")
+        source(src="http://html5.v2bcdn.com/es/trailerclips/ES_1220_trailer_WL25R.mp4?ece058df664790e5cc127b91d7e616479f76044a425d4e96d24cc74bcdb93b08cc72bc331f106fd0183031cc42ce07220625a19cbd320614249a2d357e799b27699d2000d4102a5204cd8cd849516d400ee739699f3e09325349", type="video/mp4")
     section.col-md-4.panel__Live--Chat
       form.form__Live--Chat
-        textarea(name="", cols="30", rows="2", placeholder="Comenta, Pregunta la transmisión en vivo")
+        textarea(name="", cols="30", rows="2", placeholder="Comenta, Pregunta la clase")
         fieldset.form__Live--Chat--Fieldset
           input(type="submit", value="Enviar Pregunta")
+      div.form__Live--Chat--Stream
+        article.Stream
+          figure.Stream__Figure
+            img(src="/users/#{user.avatar}", width="50px")
+          div.Stream__Detalles
+            header.Stream__Detalles--Header
+              span.Name
+                | #{user.nickname}
+              span.Separed /
+              span.Data
+                | 25-06-16
+            div.Stream__Detalles--Show
+              p.description
+                | Que es la etiqueta XHTML?
+        article.Stream
+          figure.Stream__Figure
+            img(src="/users/#{user.avatar}", width="50px")
+          div.Stream__Detalles
+            header.Stream__Detalles--Header
+              span.Name
+                | #{user.nickname}
+              span.Separed /
+              span.Data
+                | 25-06-16
+            div.Stream__Detalles--Show
+              p.description
+                | Que es la etiqueta XHTML?
+        article.Stream
+          figure.Stream__Figure
+            img(src="/users/#{user.avatar}", width="50px")
+          div.Stream__Detalles
+            header.Stream__Detalles--Header
+              span.Name
+                | #{user.nickname}
+              span.Separed /
+              span.Data
+                | 25-06-16
+            div.Stream__Detalles--Show
+              p.description
+                | Que es la etiqueta XHTML?
+        article.Stream
+          figure.Stream__Figure
+            img(src="/users/#{user.avatar}", width="50px")
+          div.Stream__Detalles
+            header.Stream__Detalles--Header
+              span.Name
+                | #{user.nickname}
+              span.Separed /
+              span.Data
+                | 25-06-16
+            div.Stream__Detalles--Show
+              p.description
+                | Que es la etiqueta XHTML?
+        article.Stream
+          figure.Stream__Figure
+            img(src="/users/#{user.avatar}", width="50px")
+          div.Stream__Detalles
+            header.Stream__Detalles--Header
+              span.Name
+                | #{user.nickname}
+              span.Separed /
+              span.Data
+                | 25-06-16
+            div.Stream__Detalles--Show
+              p.description
+                | Que es la etiqueta XHTML?
+        article.Stream
+          figure.Stream__Figure
+            img(src="/users/#{user.avatar}", width="50px")
+          div.Stream__Detalles
+            header.Stream__Detalles--Header
+              span.Name
+                | #{user.nickname}
+              span.Separed /
+              span.Data
+                | 25-06-16
+            div.Stream__Detalles--Show
+              p.description
+                | Que es la etiqueta XHTML?
+        article.Stream
+          figure.Stream__Figure
+            img(src="/users/#{user.avatar}", width="50px")
+          div.Stream__Detalles
+            header.Stream__Detalles--Header
+              span.Name
+                | #{user.nickname}
+              span.Separed /
+              span.Data
+                | 25-06-16
+            div.Stream__Detalles--Show
+              p.description
+                | Que es la etiqueta XHTML?
+        article.Stream
+          figure.Stream__Figure
+            img(src="/users/#{user.avatar}", width="50px")
+          div.Stream__Detalles
+            header.Stream__Detalles--Header
+              span.Name
+                | #{user.nickname}
+              span.Separed /
+              span.Data
+                | 25-06-16
+            div.Stream__Detalles--Show
+              p.description
+                | Que es la etiqueta XHTML?
+
 
 
 

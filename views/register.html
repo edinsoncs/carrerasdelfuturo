@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Carreras del Futuro</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="../stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheets/bootstrap-theme.css">
+    <link rel="stylesheet" href="../stylesheets/app.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="../javascripts/bootstrap.min.js"></script>
+    <script src="../javascripts/code-developer.js"></script>
+    <!--script(src="javascripts/code-developer2.js")-->
+    <!--script(src="javascripts/code-developer3.js")-->
+  </head>
+</html>
+<body class="uColorWhite">
+  <header class="header container-fluid">
+    <div class="row">
+      <section class="header__Web col-xs-8 col-md-10">
+        <h1 class="titleHeader">Carrerasdelfuturo</h1>
+      </section>
+    </div>
+  </header>
+  <main class="container viewLogin">
+    <div class="row">
+      <header class="viewLogin__Header col-md-12">
+        <h2 class="title">Registrarme una cuenta</h2>
+      </header>
+    </div>
+    <div class="row">
+      <div class="col-md-6 viewLogin__Panel">
+        <form action="/register/save" method="post" class="login">
+          <fieldset class="login--Fieldset col-md-6">
+            <input type="text" placeholder="Nombre de usuario" name="usuario" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset col-md-6">
+            <input type="text" placeholder="Nombre y Apellidos" name="namefull" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset col-md-12">
+            <input type="email" placeholder="Email" name="email" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset col-md-6">
+            <input type="password" placeholder="Passsword" name="password" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset col-md-6">
+            <input type="password" placeholder="Confirmar Password" name="passwordConfirm" class="form-control">
+          </fieldset>
+          <fieldset class="login--Fieldset col-md-12">
+            <input type="submit" value="Empezar Clases">
+          </fieldset>
+        </form>
+      </div>
+      <div class="col-md-6 viewRegister__Panel">
+        <header class="viewRegister__Panel--Header">
+          <h3 class="title">Ya tienes una cuenta?</h3>
+        </header>
+        <div class="viewRegister__Panel--Continue"><a href="login" class="linkContinue">Ingresar</a></div>
+      </div>
+    </div>
+  </main>
+</body>

@@ -104,4 +104,67 @@ $(document).ready(function(){
 	}
 	slider(100000);
 
+	var editProfile = function() {
+		//item Select
+		$('.linkEdit').click(item);
+		
+		function item() {
+
+			//Disabled
+			$(this).fadeOut('slow');
+
+			$(".editProfileForm").append('<input type="hidden" name="toaccess" value="pdoxlurjhgf" >');
+
+			//Actuality Button
+			var _actualityBTN = '<input type="submit" class="linkEdit" value="Guardar Perfil">';
+
+			//Show event to click
+			var _arr_Elements = ['.jsName', '.jsNickname'];
+
+			var _img_Change = '<div class="changeIMG"><label for="img">Seleccíone una imagen</label><input type="file" id="img" name="avatar" style="display:none;"></div>';
+
+			$(this).after(_actualityBTN);
+
+			$(".profileView--Figure").append(_img_Change);
+
+			_arr_Elements.map(function(element, index, arr){
+				
+				var _name_input = $(element).text();
+
+				$(element).html('<input type="text" name="isname'+index+'" class="form-control" style="text-transform: capitalize;height:40px;" value="'+_name_input+'">');
+
+				$(element).attr('contenteditable', 'true');
+				$(element).css({
+					'transition': 'all 0.5s linear',
+					'background': '#dedede',
+					'outline': 'medium none',
+					'padding': '0',
+					'color': '#0a8ecd !important',
+					'width': '340px',
+					'margin': '0 0 0.5em 0'
+				});
+			});
+
+			viewIMG($("#img"));
+		}
+
+
+		function viewIMG(data) {
+			$(data).change(function(e){
+				var path = e.target.value;
+				
+				$(".changeIMG").addClass('successAvatar');
+				$(".changeIMG label").text('Su imagen se selecciono')
+
+				setTimeout(function(){
+					$(".changeIMG").removeClass('successAvatar');
+				}, 2500);
+
+			});
+		}
+	}
+	editProfile();
+
+	
+
 });

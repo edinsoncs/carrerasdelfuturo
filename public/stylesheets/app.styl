@@ -66,7 +66,7 @@ body
 					color white
 					i 
 						margin-right .5em
-					&:hover
+					&:hover, &:active
 						background #20b35d
 .header
 	background-color #2c3e50
@@ -182,8 +182,145 @@ body
 				@keyframes homePerson
 					50% 
 						opacity 0.5
-	
 
+.profileView
+	background-color white
+	padding-top 6em
+	padding-bottom 2em
+	.profileView--Figure 
+		margin 0
+		border-right 1px solid #dedede
+		padding-right 1em
+		height 137px
+		position relative
+		img 
+			display block
+			width 100px
+			height 92px
+			border-radius 50%
+			margin-top 1.5em
+	.profileView--Details
+		margin-left 2em
+		position relative
+		.profileView--Details--Header .title
+			color #646464 !important
+			font-size 22px
+			text-transform capitalize
+			font-family 'Roboto'
+		.profileView--Details--Header
+			.nickname .title
+				font-size 16px
+				color #dedede
+				margin-top 0.5em
+				font-family 'Roboto'
+			.utils
+				padding-top 1em
+			span
+				display block
+				text-align center
+				font-size 2.5em
+				&:first-child
+					color #20b35d
+					b
+						color #20b35d
+				b
+					display block
+					font-size 1.3rem
+
+		.profileView--Edit--Container
+			position absolute
+			right 0
+			top 0
+			margin-top -1em
+			.linkEdit
+				background #0a8ecd
+				padding 0.8em
+				border-radius 4px
+				color white
+				cursor pointer
+				font-family 'Roboto'
+				display block
+				transition all 0.5s linear
+				&:hover, &:active
+					text-decoration none
+				&:nth-child(2)
+					margin-top 1em
+					background #F44336 !important
+					border none
+					outline none 	
+.profileViewMain
+	padding-top 2em
+	padding-bottom 2em
+	.cours__Header
+		padding-bottom 1em
+		padding-left 0 
+		font-family 'Roboto'
+		.title
+			font-size 24px
+			font-weight 700
+		.show
+			line-height 16px
+		.cours__Continue
+			.linkContinue
+				display block
+				margin-top 1em
+				background-color #4CAF50
+				float none
+				margin-left auto
+				margin-right auto
+				padding-top 0.8em
+				padding-bottom 0.8em
+				border-radius 4px
+				color white!important
+				font-family 'Roboto'
+				box-shadow 0 4px 0 #236426
+				&:active
+					transform: scale(1.1, 1.1)
+	
+	.cours__Aleatorio {
+		padding-left: 0;
+		padding-right: 0;
+		.linkcours__Aleatorio--Link {
+			background-color: #5c8512;
+			padding: 0.5em;
+			text-decoration: none;
+			color: white;
+		}
+	}
+
+	.cours
+		background-color #ecf7fb
+		border 1px solid #0791e6
+		padding-top 1em
+		padding-bottom 1em
+		text-align center
+		border-radius 4px
+		width: 30%;
+		margin: 0 1em
+		.title
+			margin-top 0.5em
+			margin-bottom 0.5em
+
+.successAvatar
+	animation profile 1s
+	@keyframes profile
+		20%
+			box-shadow 0 0 10px #0a8ecd
+			background #0a8ecd !important
+		50% 
+			box-shadow 0 0 30px #0a8ecd
+.changeIMG
+	background rgba(0, 0, 0, 0.51)
+	position absolute
+	top 15%
+	width 100px
+	height 92px
+	border-radius 50%
+	text-align center
+	padding-top 2em
+	label
+		color white
+		font-size 13px
 .subHeader
 	background-color black
 	background-image url('../images/bg.jpg')
@@ -429,6 +566,16 @@ body
 		text-align center
 		.title
 			font-family 'Oswald', sans-serif
+	.viewLogin__Show
+			text-align center
+			margin-top 1.5em
+			margin-bottom 1.5em
+			.title
+				font-size 1.2em
+				color #2196F3!important
+			.titleError 
+				font-size 1.2em
+				color #F44336!important
 	.viewLogin__Panel
 		//background red
 		float none
@@ -438,7 +585,8 @@ body
 		margin-top 2em
 		border 2px solid #eeba55
 		border-radius 7px
-		input[type='email'], input[type='password']
+		overflow hidden
+		input[type='text'], input[type='email'], input[type='password']
 			margin-bottom 1em
 			height 50px
 			background #dedede
@@ -452,7 +600,6 @@ body
 				border-radius 5px
 				outline medium none
 				box-shadow 0 4px 0 #066e32
-				
 				font-size 1em
 	.viewRegister__Panel
 		float none
@@ -575,20 +722,84 @@ body
 			opacity 0.7
 .panel__Main
 	padding-top 5em
+	.panel__Main--Header
+		text-align center
+		padding-bottom 1em
+		.title
+			font-size 1.5em
+	.panel__Main--Welcome
+		margin-bottom 2em
+		.panel__Main--Welcome--Cours
+			box-shadow 0 9px 14px #b6b5b5
+			.cA1 
+				background #058ecd
+			.cA2 
+				background #009688
+			.cA3
+				background #FF9800
+			.cA4
+				background #795548
+			.cA5
+				background #607D8B
+			.cA6
+				background #FF5722
+			.panel__Main--Welcome--Header
+				padding 1.5em 1em
+				border-top-left-radius 4px
+				border-top-right-radius 4px
+			.panel__Main--Welcome--Header .title
+				color white!important
+				font-size 22px
+				sup 
+					margin-left 0.5em
+					margin-top 0.4em
+					text-shadow 0 2px 3px black
+			.panel__Main--Welcome--Description 
+				.description
+					padding 0.5em
+			.panel__Main--Welcome--Figure
+				img 
+					width 100%
+					display block
+			.panel__Main--Welcome--Ul
+				padding 0
+				margin 0
+				background-color white
+				.list
+					padding 1em 0 1em 1em
+					border-top 1px solid #dddddc
+					list-style-type none
+					font-weight 700
+			.panel__Main--Welcome--Shop
+				background-color white
+				text-align center
+				padding 1.5em 0
+				.linkShop
+					background #E91E63
+					padding 1em 
+					border-radius 4px
+					color white
+					&:hover, &:active
+						text-decoration none
+
+					
 .panel__Live
 	padding-top 3.7em
 	.panel__Live--Movie
 		padding-left 0
 		padding-right 0
 	.panel__Live--Chat
-		background-color white
+		background-color #f6f6f6
 		position fixed
 		right 0
 		bottom 0
 		top 0
 		padding-top 5em
 		border-left 5px solid #2980b9
+		overflow-y scroll
+		overflow-x hidden
 		.form__Live--Chat
+			margin-bottom 2em
 			textarea
 				width 100%
 				resize none
@@ -606,6 +817,46 @@ body
 					border-radius 4px
 					outline none
 					box-shadow 0 4px 0 #1a72b7
+		.form__Live--Chat--Stream
+			.Stream
+				display flex
+				justify-content space-between
+				background-color #fff
+				padding 0.5em
+				margin-top 1em
+				margin-bottom 1em
+				border-radius 4px
+				border 1px solid #dedede
+				cursor pointer
+				transition all 0.5s linear
+				&:hover 
+					border 1px solid #2196f3
+				&:active
+					transform scale(0.9, 0.9)
+				.Stream__Figure img 
+					border-radius 50%
+					height 45px
+				.Stream__Figure--Name
+					display block
+					text-align center
+				.Stream__Detalles
+					width: 89%
+					.Stream__Detalles--Header
+						text-align right
+						span 
+							font-size 0.8em
+							color #787676
+						.Separed
+							margin-right 0.5em
+							margin-left 0.5em
+					.Stream__Detalles--Show 
+						text-align left
+					.Stream__Detalles--Show .description 
+						font-size 0.9em
+						margin-left 0.5em
+						margin-right 0.5em
+						font-weight 700
+						color #2196f3
 .bottomFooter
 	background-color #2c3e50
 	height 200px
