@@ -1,5 +1,10 @@
 body, h1, h2, h3, h4, h5, h6
 	margin 0
+	
+p, ul li 
+	font-family 'Roboto', sans-serif
+a, a:hover 
+	text-decoration none
 
 //Colors
 $blanco = white	
@@ -73,14 +78,19 @@ body
 	left 0
 	right 0
 	z-index 999
+	div {
+		display: flex;
+		align-items: center
+	}
 	.header__Web
-		padding-top 0.8em
-		padding-bottom 0.8em
+		padding-top 0
+		padding-bottom 0
 		.titleHeader
 			color $blanco
 			font-family 'Titillium Web', sans-serif
 			text-transform uppercase
 			font-size 2em
+			text-ident: -9999px;
 	.header__Nav
 		.header__Nav--Ul
 			margin-bottom 0
@@ -260,6 +270,7 @@ body
 			margin 0 0 2em 0
 			.title
 				color #7F8A94
+				    font-family 'Oswald', sans-serif
 		.Aside--Description
 			padding-top 1em
 			padding-bottom 1em
@@ -268,6 +279,7 @@ body
 			margin 0 0 2em 0
 			.title
 				font-size 1.2em
+				font-family 'Oswald', sans-serif
 				color #7F8A94
 		.Aside__Ul
 			padding 0
@@ -286,6 +298,8 @@ body
 	padding-top 1em
 	padding-left 0
 	padding-right 0
+	h4 
+		font-family 'Oswald', sans-serif
 .ulShow
 	padding 0
 	margin-top 1em
@@ -342,6 +356,21 @@ body
 				font-size 1.2em
 				&:hover
 					text-decoration none
+			.linkBuyPayment
+				margin 0 auto
+				background-color #f1c40f
+				color white
+				padding 0.8em 1em
+				display block
+				width 40%
+				cursor pointer
+				text-align center
+				border-radius 4px
+				border 1px solid #937604
+				font-size 1.2em
+				outline none
+				&:hover
+					text-decoration none		
 					
 		
 	.aside__Author--Contain
@@ -596,6 +625,9 @@ body
 .footer
 	padding-top 1em
 	padding-bottom 1em
+	.primaryFooter
+		padding-top 1em
+		padding-bottom 1em
 	.footer__Ul
 		.list
 			list-style-type none
@@ -654,3 +686,6 @@ body
 	.description__Cours--Show
 		padding-left 1em
 		padding-right 1em
+
+.description__Cours--Show 
+	padding 0 0 2em 0

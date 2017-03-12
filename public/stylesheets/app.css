@@ -7,6 +7,14 @@ h5,
 h6 {
   margin: 0;
 }
+p,
+ul li {
+  font-family: 'Roboto', sans-serif;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
 .uColorWhite {
   background: #fff;
 }
@@ -87,15 +95,20 @@ body {
   right: 0;
   z-index: 999;
 }
+.header div {
+  display: flex;
+  align-items: center;
+}
 .header .header__Web {
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .header .header__Web .titleHeader {
   color: #fff;
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
   font-size: 2em;
+  text-ident: -9999px;
 }
 .header .header__Nav .header__Nav--Ul {
   margin-bottom: 0;
@@ -306,6 +319,7 @@ body {
 }
 .header__Cours .header__Cours--Aside .Aside--Header .title {
   color: #7f8a94;
+  font-family: 'Oswald', sans-serif;
 }
 .header__Cours .header__Cours--Aside .Aside--Description {
   padding-top: 1em;
@@ -316,6 +330,7 @@ body {
 }
 .header__Cours .header__Cours--Aside .Aside--Header--Details .title {
   font-size: 1.2em;
+  font-family: 'Oswald', sans-serif;
   color: #7f8a94;
 }
 .header__Cours .header__Cours--Aside .Aside__Ul {
@@ -338,6 +353,9 @@ body {
   padding-top: 1em;
   padding-left: 0;
   padding-right: 0;
+}
+.header_content h4 {
+  font-family: 'Oswald', sans-serif;
 }
 .ulShow {
   padding: 0;
@@ -400,6 +418,23 @@ body {
   font-size: 1.2em;
 }
 .aside__Author .aside__Price--Contain .aside__Price--Buy .linkBuy:hover {
+  text-decoration: none;
+}
+.aside__Author .aside__Price--Contain .aside__Price--Buy .linkBuyPayment {
+  margin: 0 auto;
+  background-color: #f1c40f;
+  color: #fff;
+  padding: 0.8em 1em;
+  display: block;
+  width: 40%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #937604;
+  font-size: 1.2em;
+  outline: none;
+}
+.aside__Author .aside__Price--Contain .aside__Price--Buy .linkBuyPayment:hover {
   text-decoration: none;
 }
 .aside__Author .aside__Author--Contain {
@@ -698,6 +733,10 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+.footer .primaryFooter {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 .footer .footer__Ul .list {
   list-style-type: none;
   color: #2c3e50;
@@ -767,4 +806,7 @@ body {
     padding-left: 1em;
     padding-right: 1em;
   }
+}
+.description__Cours--Show {
+  padding: 0 0 2em 0;
 }

@@ -38,7 +38,7 @@ $(document).ready(function(){
                         $form.append($('<input>').attr({ type: 'hidden', name: 'stripeToken', value: result.id })).submit();
                     	
                         $.ajax({
-                        	url: 'new',
+                        	url: '/new',
                         	type: 'POST',
                         	dataType: 'JSON',
                         	contentType: 'application/json',
@@ -73,7 +73,7 @@ $(document).ready(function(){
 						"<div class='row'>"+
 							"<div class='col-md-12'>" +
 								"<header class='headerSuccess'><h2 class='title'>Felicidades</h2></header>" +
-								"<figure class='figure'><img src='https://scontent-grt2-1.xx.fbcdn.net/v/t1.0-1/p160x160/14238254_340746319649533_2462327527717628267_n.jpg?oh=32a8e777071336b6becfdd6b603f6ff7&oe=587EDB74' alt='carrerasdelfuturo'></figure>" +
+								"<figure class='figure'><img src='/images/logopayment.png' alt='carrerasdelfuturo'></figure>" +
 								"<div class='usershow'>"+
 									"<div class='usershow--Name'>"+
 										"<span><strong>Email</strong>: "+data.email+"</span>"+

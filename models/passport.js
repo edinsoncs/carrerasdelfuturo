@@ -22,8 +22,6 @@ module.exports = (passport) => {
         usernameField: 'email',
         passwordField: 'password'
     }, (username, password, done) => {
-        console.log(username);
-        console.log(password);
         process.nextTick(() => {
             usuario.findOne({
                 'email': username,
@@ -43,7 +41,6 @@ module.exports = (passport) => {
                     console.log('hubo un error en la cuenta');
                     return done(null, false);
                 }
-
                 return done(null, user);
             });
         });

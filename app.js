@@ -9,7 +9,6 @@ var flash = require('req-flash');
 
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-
 var expressSession = require('express-session');
 
 var routes = require('./routes/index');
@@ -17,6 +16,7 @@ var users = require('./routes/users');
 var panel = require('./routes/panel');
 var login = require('./routes/login');
 var envivo = require('./routes/envivo');
+var curso = require('./routes/cursos');
 
 var generatePassword = require('password-generator');
 
@@ -77,8 +77,12 @@ function validate(req, res, next) {
 app.use('/', routes);
 app.use('/new', users);
 app.use('/login', login);
+
+app.use('/curso', curso);
+
 app.use('/panel', validate, panel);
 app.use('/envivo', validate, envivo);
+
 
 app.get('/notfound', function(req, res, next){
   res.render('notfound');
