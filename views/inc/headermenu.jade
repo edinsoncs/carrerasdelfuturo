@@ -17,7 +17,7 @@ header.header.container-fluid
       div.header__User--Icon(data-toggle='dropdown')
           i(class="fa fa-angle-down", aria-hidden="true")
         ul.dropdown-menu
-          if user
+          
             if user.admin == true
 
               li(role='presentation')
@@ -50,7 +50,7 @@ header.header.container-fluid
                 a(role='menuitem', tabindex='-1', onclick="function exit(){ window.location.href = '/exit'  } exit();") 
                  i(class="fa fa-sign-out", aria-hidden="true") 
                  | Salir
-          else 
+         
     else
      nav.header__Nav.col-xs-4.col-md-3
       ul.header__Nav--Ul

@@ -7,6 +7,4 @@ module.exports = (req, res, next) => {
 		user: req.user
 	});
 
-	console.log(req.user);
-
 }
