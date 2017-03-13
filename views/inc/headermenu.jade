@@ -4,14 +4,16 @@ header.header.container-fluid
      h1.titleHeader
       a(href="/")
         img(src="/images/logo.png", alt="Carrerasdelfuturo")
-    figure.header__User.col-md-1.dropdown(data-toggle='dropdown')
       if user
         if user.avatar
-          img(src="/users/#{user.avatar}", width="40px")
+          figure.header__User.col-md-1.dropdown(data-toggle='dropdown')
+           img(src="/users/#{user.avatar}", width="40px")
         else
-          img(src="/images/avatar.png", width="40px")
+          figure.header__User.col-md-1.dropdown(data-toggle='dropdown')
+           img(src="/images/avatar.png", width="40px")
       else
        
+    if user
       div.header__User--Icon(data-toggle='dropdown')
           i(class="fa fa-angle-down", aria-hidden="true")
         ul.dropdown-menu
@@ -49,4 +51,11 @@ header.header.container-fluid
                  i(class="fa fa-sign-out", aria-hidden="true") 
                  | Salir
           else 
+    else
+     nav.header__Nav.col-xs-4.col-md-3
+      ul.header__Nav--Ul
+        li.list
+          a.link.login(href='login') Ingresar
+     
+
               
