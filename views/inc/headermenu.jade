@@ -1,49 +1,60 @@
 header.header.container-fluid
    div.row
-    section.header__Web.col-xs-8.col-md-11
-     h1.titleHeader
-      a(href="/")
-        img(src="/images/logo.png", alt="Carrerasdelfuturo")
-    nav.header__Nav.col-xs-4.col-md-1
-      div.header__User--Icon(data-toggle='dropdown')
-        if user
-          if user.avatar
-            figure.header__User.dropdown(data-toggle='dropdown')
-               img(src="/users/#{user.avatar}", width="40px")
-            ul.dropdown-menu
-              //li(role='presentation')
-                a(role='menuitem', tabindex='-1', onclick="window.location.href = '/panel/profile'; ") 
-                 i(class="fa fa-user", aria-hidden="true")
-                 | Mi Perfil
-              li(role='presentation')
-                a(role='menuitem', tabindex='-1', href='#') 
-                 i(class="fa fa-graduation-cap", aria-hidden="true")
-                 | Certificados
-              li(role='presentation')
-                a(role='menuitem', tabindex='-1', onclick="function exit(){ window.location.href = '/exit'  } exit();") 
-                 i(class="fa fa-sign-out", aria-hidden="true") 
-                 | Salirs
-          else
-            figure.header__User.dropdown(data-toggle='dropdown')
-              img(src="/images/avatar.png", width="40px")
-            ul.dropdown-menu
-              //li(role='presentation')
-                a(role='menuitem', tabindex='-1', onclick="window.location.href = '/panel/profile'; ") 
-                 i(class="fa fa-user", aria-hidden="true")
-                 | Mi Perfil
-              li(role='presentation')
-                a(role='menuitem', tabindex='-1', href='#') 
-                 i(class="fa fa-graduation-cap", aria-hidden="true")
-                 | Certificados
-              li(role='presentation')
-                a(role='menuitem', tabindex='-1', onclick="function exit(){ window.location.href = '/exit'  } exit();") 
-                 i(class="fa fa-sign-out", aria-hidden="true") 
-                 | Salir
-        else
-          ul.header__Nav--Ul
-            li.list
-              a.link.login(href="/login")
-                | Ingresar
+     if user
+        section.header__Web.col-xs-8.col-md-11
+       h1.titleHeader
+        a(href="/")
+          img(src="/images/logo.png", alt="Carrerasdelfuturo")
+     
+        nav.header__Nav.col-xs-4.col-md-1
+          div.header__User--Icon(data-toggle='dropdown')
+            if user
+              if user.avatar
+                figure.header__User.dropdown(data-toggle='dropdown')
+                   img(src="/users/#{user.avatar}", width="40px")
+                ul.dropdown-menu
+                  //li(role='presentation')
+                    a(role='menuitem', tabindex='-1', onclick="window.location.href = '/panel/profile'; ") 
+                     i(class="fa fa-user", aria-hidden="true")
+                     | Mi Perfil
+                  li(role='presentation')
+                    a(role='menuitem', tabindex='-1', href='#') 
+                     i(class="fa fa-graduation-cap", aria-hidden="true")
+                     | Certificados
+                  li(role='presentation')
+                    a(role='menuitem', tabindex='-1', onclick="function exit(){ window.location.href = '/exit'  } exit();") 
+                     i(class="fa fa-sign-out", aria-hidden="true") 
+                     | Salirs
+              else
+                figure.header__User.dropdown(data-toggle='dropdown')
+                  img(src="/images/avatar.png", width="40px")
+                ul.dropdown-menu
+                  //li(role='presentation')
+                    a(role='menuitem', tabindex='-1', onclick="window.location.href = '/panel/profile'; ") 
+                     i(class="fa fa-user", aria-hidden="true")
+                     | Mi Perfil
+                  li(role='presentation')
+                    a(role='menuitem', tabindex='-1', href='#') 
+                     i(class="fa fa-graduation-cap", aria-hidden="true")
+                     | Certificados
+                  li(role='presentation')
+                    a(role='menuitem', tabindex='-1', onclick="function exit(){ window.location.href = '/exit'  } exit();") 
+                     i(class="fa fa-sign-out", aria-hidden="true") 
+                     | Salir
+          
+      else
+
+        section.header__Web.col-xs-8.col-md-10
+         h1.titleHeader
+          a(href="/")
+            img(src="/images/logo.png", alt="Carrerasdelfuturo")
+       
+          nav.header__Nav.col-xs-4.col-md-2
+            ul.header__Nav--Ul
+              li.list
+                a.link.login(href="/login")  Ingresar
+            
+
 
           
      
