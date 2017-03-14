@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 	function stripe(){
 
-		$(".payment, .linkBuy").click(function(e){
+		/*$(".payment, .linkBuy").click(function(e){
 			e.preventDefault();
 
 			var $button = $(this);
@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 			return false;
 
-		});
+		});*/
 
 
 	}
